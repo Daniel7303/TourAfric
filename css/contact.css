@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure full height of the viewport */
+    margin: 0;
+}
+
+.contact-container {
+    
+    width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -7rem;
+}
+p {
+    margin-top: -2px;
+    font-weight: 400;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label {
+    margin: 10px 0;
+}
+
+input {
+    background: rgba(128, 128, 128, 0.687);
+    padding: 0.7rem;
+    border: none;
+    outline: none;
+    margin: -8px 0 15px 0;
+}
+
+button {
+    padding: 0.6rem;
+    background: rgb(6, 6, 71);
+    color: white;
+    border: none;
+}
+  
+/* style the checkbox */
+  .check-box {
+    margin: 10px 0 2rem 0;
+    font-size: small;
+  }
