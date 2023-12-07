@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  header {
+    position: relative;
+    width: 100%;
+    max-width: 1440p;
+    height: 80%;
+    margin: 0 auto;
+    color: white;
+  }
+
+  .navBar {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 5%;
+    
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+  .navBar ul {
+    display: flex;
+    
+    gap: 1rem;
+  }
+  ul li {
+    list-style: none;
+  }
+  ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .welcome {
+    position: absolute;
+    width: 40%;
+    top: 30%;
+    padding-left: 2rem;
+  }
+
+ /*  style the content box */
+  .content-box {
+    position: absolute;
+    width: 70%;
+    height: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    overflow: hidden;
+    font-size: 0.8rem;
+    line-height: 1.2;
+
+  }
+  .content-box div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    height: 70;
+  }
+  .content-box img {
+    max-width: 100px;
+  }
+  button {
+    background: rgb(16, 16, 71);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 14px;
+  }
+
+ /*  style site tools */
+
+ .section {
+    padding: 7rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    
+ }
+.section-tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section-tools img {
+    margin-bottom: 2em;
+}
+.section-tools p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.section-tools span {
+    font-size: 0.9rem;
+}
+
+
+
+
+  /* Add more styles as needed for other elements */
+/* cards */
+
+  .places{
+    width: 22rem;
+    height: 29rem;
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 3rem;
+}
+
+.places img{
+    width: 22rem;
+    height: 21rem;
+}
+.places h3{
+    text-align: center;
+    padding: 0.5rem 0 0.9rem;
+    font-size: 1.4rem;
+    color: #296592;
+}
+.places_loc{
+    display: flex;
+    gap: 4px;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+}
