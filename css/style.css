@@ -50,6 +50,7 @@ body {
     width: 40%;
     top: 30%;
     padding-left: 2rem;
+    font-size: 4rem;
   }
 
  /*  style the content box */
@@ -91,6 +92,9 @@ body {
     border-radius: 14px;
   }
 
+  main {
+    padding: 4rem;
+  }
  /*  style site tools */
 
  .section {
@@ -103,13 +107,21 @@ body {
     
  }
 .section-tools {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
+
+/* .tools {
+  max-width: 400px;
+  text-align: center;
+} */
 .section-tools img {
     margin-bottom: 2em;
+
 }
 .section-tools p {
     font-size: 1rem;
@@ -126,18 +138,23 @@ body {
 
   /* Add more styles as needed for other elements */
 /* cards */
-
+.card-section {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
   .places{
-    width: 22rem;
-    height: 29rem;
+    width: 100%;
+    height: 25rem;
     border-radius: 40px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin-bottom: 3rem;
 }
 
 .places img{
-    width: 22rem;
-    height: 21rem;
+    width: 100%;
+    height: 18rem;
+
 }
 .places h3{
     text-align: center;
