@@ -7,14 +7,14 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   header {
     position: relative;
     width: 100%;
     max-width: 1440p;
-    height: 80%;
+    height: 100%;
     margin: 0 auto;
     color: white;
   }
@@ -23,34 +23,46 @@ body {
     position: absolute;
     width: 100%;
     left: 50%;
-    top: 5%;
+    top: 7%;
     
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 3rem;
+    
   }
   .navBar ul {
     display: flex;
     
     gap: 1rem;
   }
+
+  ul li:nth-child(5) {
+    margin-left: 2rem;
+  }
+
   ul li {
     list-style: none;
   }
   ul li a {
     text-decoration: none;
     color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
   }
 
   .welcome {
     position: absolute;
-    width: 40%;
-    top: 30%;
-    padding-left: 2rem;
+    width: 50%;
+    top: 15%;
+    padding: 4rem;
     font-size: 4rem;
+  }
+
+  .welcome span {
+    white-space: nowrap;
   }
 
  /*  style the content box */
@@ -68,7 +80,7 @@ body {
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 4rem;
     overflow: hidden;
     font-size: 0.8rem;
     line-height: 1.2;
@@ -78,50 +90,56 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.2rem;
-    height: 70;
+    gap: 0.4rem;
+    height: 70px;
   }
   .content-box img {
     max-width: 100px;
   }
-  button {
+ /*  button {
     background: rgb(16, 16, 71);
     color: white;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 14px;
   }
-
+ */
   main {
     padding: 4rem;
   }
  /*  style site tools */
 
  .section {
-    padding: 7rem 2rem;
+     padding: 6rem 2rem; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 4rem;
     
+    
  }
-.section-tools {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+ .section h1 {
+  font-size: 3rem;
+  font-weight: 50;
+  width: 500px;
+  text-align: center;
+ }
+ .section-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-/* .tools {
-  max-width: 400px;
+.tools {
+  flex: 1 1 250px; /* Equal width, minimum width of 250px */
+  padding: 20px;
   text-align: center;
-} */
-.section-tools img {
-    margin-bottom: 2em;
+}
 
+.tools img {
+  max-width: 100%;
+  height: auto;
 }
 .section-tools p {
     font-size: 1rem;
@@ -131,6 +149,7 @@ body {
 
 .section-tools span {
     font-size: 0.9rem;
+    width: 200px;
 }
 
 
@@ -139,32 +158,106 @@ body {
   /* Add more styles as needed for other elements */
 /* cards */
 .card-section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.seemore {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.places-section {
+  position: relative;
+  width: 100%;
+  height: auto; /* Adjust as needed */
+  border-radius: 40px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 3rem;
+}
+
+.places-section img {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+  position: relative;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.starRat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: green;
+  top: 0.5rem; /* Adjust top value to your preference */
+  right: 1rem; /* Adjust right value to your preference */
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.starRat img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.places_location {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 1rem;
+  background: white;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.places_location span {
+  display: flex;
+  gap: 0.4rem;
+  
+
+}
+
+.places_location p {
+  margin: 0;
+}
+
+button {
+  margin: -2.7rem 1.2rem 0 2rem;
+  padding: 0.5rem 1rem;
+  background: #041f3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+
+
+
+/* our services section */
+.cards-services {
   width: 100%;
   display: flex;
   gap: 1rem;
 }
-  .places{
-    width: 100%;
-    height: 25rem;
-    border-radius: 40px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    margin-bottom: 3rem;
+.cards-plan {
+  width: 100%;
+  height: 25rem;
+  border-radius: 40px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 3rem;
 }
 
-.places img{
-    width: 100%;
-    height: 18rem;
+.cards-plan img {
+  display:i;
+  width: 100%;
+  height: 18rem;
 
 }
-.places h3{
-    text-align: center;
-    padding: 0.5rem 0 0.9rem;
-    font-size: 1.4rem;
-    color: #296592;
-}
-.places_loc{
-    display: flex;
-    gap: 4px;
-    padding-bottom: 0.5rem;
-    padding-left: 2rem;
-}
+
