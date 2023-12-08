@@ -226,10 +226,10 @@ body {
   margin: 0;
 }
 
-button {
+.places-section button {
   margin: -2.7rem 1.2rem 0 2rem;
   padding: 0.5rem 1rem;
-  background: #041f3c;
+  background: #0E3854;
   color: white;
   border: none;
   border-radius: 5px;
@@ -283,13 +283,19 @@ button {
   margin-left: 2rem;
   font-size: small;
   margin-bottom: 2rem;
+  margin-left: 1rem;
 }
 .plan-list h3 {
   margin-bottom: 0.5rem;
 }
-
 .plan-list li {
-  list-style-type: disc ;
+  list-style: none;
+}
+.plan-list ul li img {
+  width: 10px;
+  height: 10px;
+  color: #0E3854;
+  margin-right: 1rem;
 }
 
 body > main > div.our-services > div > div:nth-child(2) > div > ul > li:nth-child(5) {
@@ -315,7 +321,7 @@ body > main > div.our-services > div > div:nth-child(2) > div > ul > li:nth-chil
 
 
 .review-cards {
-  background: grey;
+  background: #D9D9D9;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -347,37 +353,44 @@ flex-direction: column;
 
 .explore  {
   width: 100%;
-  background: grey;
+  background: #D9D9D9;
+  margin-top: 4rem;
   padding: 2rem 3rem;
   border-radius: 3.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .explore-form {
-  position: relative;
   background: white;
   width: 100%;
   padding: 0.8rem 1rem;
-  border-radius: 2rem;
+  border-radius: 1.2rem;
   display: flex;
   justify-content: space-between;
 
 
 }
 .explore input {
-  width: 80%;
+  width: 100%;
   padding: 0.5rem;
-  border: non;
+  border: none;
   outline: none;
-  margin-right: 2rem;
+  margin-left: 1rem;
 }
 
-.explore-form .btn {
+.btn {
+  background: #0E3854;
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
   margin: 0;
-  width: 100px;
+  width: 150px;
+  white-space: nowrap;
+
 }
 
 
