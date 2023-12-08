@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/signup.css" />
+    <link rel="stylesheet" href="/css/toast.css">
     <title>Document</title>
   </head>
   <body>
@@ -13,7 +14,7 @@
         <h2>Create Account</h2>
       </div>
 
-      <form action="">
+      <form action="" id="signupForm">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your name" required/>
         <label for="email">Email</label>
@@ -41,7 +42,7 @@
             </label>
           </div>
 
-        <button>Sign Up</button>
+          <button type="button" onclick="simpleToast()">Sign Up</button>
       </form>
 
       <div class="center-text">
@@ -50,5 +51,9 @@
         <hr />
         </div>
     </div>
+    <div id="simpleToast">
+       <span>Signup Successful!...</span>
+    </div>
+    <script src="/Javascript/signup.js"></script>
   </body>
 </html>
