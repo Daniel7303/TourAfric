@@ -297,6 +297,100 @@ body > main > div.our-services > div > div:nth-child(2) > div > ul > li:nth-chil
 }
 
 
+
+/* style review card */
+
+.review-container h1 {
+  text-align: center;
+  padding: 4rem;
+  font-weight: 300;
+}
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
+
+
+.review-cards {
+  background: grey;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+  flex: 1 1 250px;
+  border-radius: 40px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1rem; 
+  text-align: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  
+}
+
+.review-cards img {
+  width: 170px;
+  margin-top: -1.5rem;
+}
+
+.review-cards span img {
+  width: 30px;
+}
+.review-cards p {
+  width: 250px;
+}
+
+
+/* explore the world */
+
+.explore  {
+  width: 100%;
+  background: grey;
+  padding: 2rem 3rem;
+  border-radius: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-form {
+  position: relative;
+  background: white;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+.explore input {
+  width: 80%;
+  padding: 0.5rem;
+  border: non;
+  outline: none;
+  margin-right: 2rem;
+}
+
+.explore-form .btn {
+  margin: 0;
+  width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 700px) {
   .navBar ul {
     display: none;
