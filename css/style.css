@@ -161,6 +161,7 @@ body {
   display: flex;
   gap: 20px;
   justify-content: center;
+ 
 }
 .seemore {
   display: flex;
@@ -510,7 +511,33 @@ footer {
 
 
 @media (max-width: 700px) {
+  main {
+    padding: 2rem;
+  }
+  .navBar {
+    padding: 2rem 2rem;
+    top: 20%;
+    
+  }
   .navBar ul {
     display: none;
+  }
+  .welcome {
+    font-size: 2rem;
+    padding: 2rem;
+    top: 30%;
+  }
+  .socials img{
+    margin-right: 0.2rem
+  }
+  .section h1 {
+    font-size: 1.5rem;
+    
+  }
+  .card-section {
+    flex-wrap: wrap;
+  }
+  .places-section {
+    flex: 1 1 250px;
   }
 }
