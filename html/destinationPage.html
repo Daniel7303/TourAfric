@@ -25,19 +25,22 @@
 
     <div class="container">
       <section class="search">
-        <form action="" class="search-form">
+        <form action="" class="search-form" onsubmit="filterDestinations(event)">
           <input
             type="text"
             placeholder="Enter a Destination"
             class="search-input"
           />
-          <button>Search</button>
+          <button type="submit">Search</button>
         </form>
       </section>
 
       <section class="locations">
+        <div class="not-available" style="display: none;">
+          <p>Oops! Destination not available at the moment</p>
+        </div>
         <div class="first_loc">
-          <div class="places">
+          <div class="places" id="mambase-island">
             <img src="/asset/images/image 2.png" alt="" />
             <h3>Mambase island</h3>
             <div class="places_loc">
@@ -58,7 +61,7 @@
             </div>
             <button>more</button>
           </div>
-          <div class="places">
+          <div class="places" id="addu-city">
             <img src="/asset/images/image 17 (1).png" alt="" />
             <h3>Addu city</h3>
             <div class="places_loc">
@@ -79,7 +82,7 @@
             </div>
             <button>more</button>
           </div>
-          <div class="places">
+          <div class="places" id="garden-city">
             <img src="/asset/images/image 18.png" alt="" />
             <h3>Garden city</h3>
             <div class="places_loc">
@@ -102,7 +105,7 @@
           </div>
         </div>
         <div class="first_loc">
-          <div class="places">
+          <div class="places" id="cairo">
             <img src="/asset/images/image 19.png" alt="" />
             <h3>Cairo</h3>
             <div class="places_loc">
@@ -123,7 +126,7 @@
             </div>
             <button>more</button>
           </div>
-          <div class="places">
+          <div class="places" id="dubai">
             <img src="/asset/images/image 21.png" alt="" />
             <h3>Dubai</h3>
             <div class="places_loc">
@@ -143,7 +146,7 @@
             </div>
             <button>more</button>
           </div>
-          <div class="places">
+          <div class="places" id="cape-town">
             <img src="/asset/images/image 20.png" alt="" />
             <h3>Cape Town</h3>
             <div class="places_loc">
@@ -166,7 +169,7 @@
           </div>
         </div>
         <div class="first_loc">
-          <div class="places">
+          <div class="places" id="east-coast">
             <img src="/asset/images/image 22.png" alt="" />
             <h3>East Coast</h3>
             <div class="places_loc">
@@ -187,7 +190,7 @@
             </div>
             <button>more</button>
           </div>
-          <div class="places">
+          <div class="places" id="abu-dhabi">
             <img src="/asset/images/image 24.png" alt="" />
             <h3>Abu Dhabi</h3>
             <div class="places_loc">
@@ -208,7 +211,7 @@
             </div>
             <button>more</button>
           </div>
-          <div class="places">
+          <div class="places" id="beijing">
             <img src="/asset/images/image 5.png" alt="" />
             <h3>Beijing</h3>
             <div class="places_loc">
@@ -230,6 +233,7 @@
             <button>more</button>
           </div>
         </div>
+      
       </section>
     </div>
 
@@ -299,5 +303,6 @@
         </div>
       </section>
     </footer>
+    <script src="/Javascript/destinationPage.js"></script>
   </body>
 </html>
