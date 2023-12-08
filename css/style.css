@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins";
   }
 
   header {
@@ -30,7 +30,7 @@ body {
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 4rem;
     
   }
   .navBar ul {
@@ -49,7 +49,7 @@ body {
   ul li a {
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
   }
 
@@ -58,7 +58,7 @@ body {
     width: 50%;
     top: 15%;
     padding: 4rem;
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .welcome span {
@@ -120,7 +120,7 @@ body {
     
  }
  .section h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 50;
   width: 500px;
   text-align: center;
@@ -241,23 +241,64 @@ button {
 
 
 /* our services section */
+.our-services  {
+ text-align: center;
+ margin-top: 3rem;
+}
+
+.our-services h1 {
+  font-weight: 300;
+  margin-bottom: 0.7rem;
+}
+
+.our-services p {
+  margin-bottom: 3rem;
+  font-weight: 300;
+}
 .cards-services {
-  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
+
+
+
+
 .cards-plan {
-  width: 100%;
-  height: 25rem;
-  border-radius: 40px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  margin-bottom: 3rem;
+  flex: 1 1 250px;
+  /* border-radius: 40px; */
+ /*  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+  margin-bottom: 1rem; 
+  text-align: start;
+  
 }
 
 .cards-plan img {
-  display:i;
   width: 100%;
   height: 18rem;
 
 }
+.plan-list {
+  line-height: 1.6;
+  margin-left: 2rem;
+  font-size: small;
+  margin-bottom: 2rem;
+}
+.plan-list h3 {
+  margin-bottom: 0.5rem;
+}
 
+.plan-list li {
+  list-style-type: disc ;
+}
+
+body > main > div.our-services > div > div:nth-child(2) > div > ul > li:nth-child(5) {
+  margin-left: 0rem;
+}
+
+
+@media (max-width: 700px) {
+  .navBar ul {
+    display: none;
+  }
+}
