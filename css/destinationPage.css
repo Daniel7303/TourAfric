@@ -119,6 +119,8 @@ header p{
 .explore{
     background: url(/asset/images/footer.png) center/cover no-repeat;
     width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
     
 }
 
@@ -127,6 +129,9 @@ header p{
     font-size: 40px;
     padding-inline: 35%;
     color: #1F4D6F;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
    
 }
 
@@ -143,19 +148,20 @@ header p{
 }
 .follow{
     display: flex;
-    gap: 0px;
+    justify-content: space-between;
+    width: 100%;
 
 }
 .socials{
     display: flex;
+    flex-direction: column;
+    
 }
 .socials img{
-    width: 30px;
+    width: 20px;
     margin-top: 10px;
 }
-.socials p{
-    margin-bottom: 20px;
-}
+
 .infos{
     display: flex;
     justify-content: space-around;
