@@ -57,6 +57,9 @@ body {
     text-align: center;
     gap: 1rem;
   }
+  .navBar img{
+    width: 10rem;
+  }
   // .navBar a:hover{
   //   color: #003254;
   // }
@@ -529,9 +532,12 @@ footer {
     padding: 2rem;
   }
   .navBar {
-    padding: 2rem 2rem;
-    top: 20%;
+    padding: 1rem 1rem;
+    // top: 20%;
     
+  }
+  .navBar img{
+    width: 5rem;
   }
   .navBar ul {
     display: none;
