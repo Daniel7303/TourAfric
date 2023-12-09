@@ -3,24 +3,40 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Ensure full height of the viewport */
+    // height: 100vh; /* Ensure full height of the viewport */
     margin: 0;
 }
 
 .sign-up-container {
     
-    width: 600px;
+    min-width: 600px;
     padding: 2rem;
+    padding-top: 6rem;
     border-radius: 8px;
+}
+.home-img{
+    height: 2rem ;
+    width: 2rem;
+    // position: absolute;
+    // top: 1rem;
+    // right: 1rem;
 }
 
 .top {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    margin-top: -7rem;
 }
+
+.top a {
+    margin-right: auto; /* Push the anchor to the left */
+}
+
+.top h1 {
+    flex: 1;
+    text-align: center; /* Center the "Sign Up" heading */
+}
+
 h2 {
     margin-top: -2px;
     font-weight: 400;
@@ -57,17 +73,28 @@ input {
 }
 
 button {
-    padding: 0.6rem;
+    margin-top: 1.8rem;
+    padding: 0.8rem;
     background: rgb(6, 6, 71);
     color: white;
     border: none;
     border-radius: 7px;
+    cursor: pointer;
 }
   
 /* style the checkbox */
   .check-box {
-    margin: 10px 0 2rem 0;
-    font-size: small;
+  display: flex;
+  font: small;
+  justify-content: start;
+  align-items: center;
+  gap: 0.3rem;
+  }
+  .check-box label{
+    margin: 0;
+  }
+  .check-box input{
+    margin: 0;
   }
 
   
@@ -101,4 +128,13 @@ button {
 
    .media-logos img {
     width: 50px;
+   }
+
+   .login{
+    display: flex;
+    justify-content: center;
+   }
+   .login a{
+    text-decoration: none;
+    color: blue;
    }

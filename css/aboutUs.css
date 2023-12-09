@@ -15,16 +15,16 @@ header{
     color: white;
 
 }
-.logo {
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
+// .logo {
+//     margin-top: 50px;
+//     margin-bottom: 30px;
+// }
 
-header p{
-    position: relative;
-    top: -40px;
-    left: 99px;
-}
+// header p{
+//     position: relative;
+//     top: -40px;
+//     left: 99px;
+// }
 
 .explore{
     background: url(/asset/images/footer.png) center/cover no-repeat;
