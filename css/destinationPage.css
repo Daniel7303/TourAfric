@@ -32,6 +32,14 @@ header p {
   top: -40px;
   left: 99px;
 }
+.home-img {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  fill: wheat;
+}
 
 .intro h2 {
   text-align: center;
@@ -69,8 +77,8 @@ header p {
   background: #d9d9d9;
   padding-left: 1rem;
 }
-.search-form{
-    position: relative;
+.search-form {
+  position: relative;
 }
 
 .search-form button {

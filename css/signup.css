@@ -17,19 +17,26 @@ body {
 .home-img{
     height: 2rem ;
     width: 2rem;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+    // position: absolute;
+    // top: 1rem;
+    // right: 1rem;
 }
 
 .top {
     display: flex;
-    
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-  
 }
+
+.top a {
+    margin-right: auto; /* Push the anchor to the left */
+}
+
+.top h1 {
+    flex: 1;
+    text-align: center; /* Center the "Sign Up" heading */
+}
+
 h2 {
     margin-top: -2px;
     font-weight: 400;
@@ -72,12 +79,22 @@ button {
     color: white;
     border: none;
     border-radius: 7px;
+    cursor: pointer;
 }
   
 /* style the checkbox */
   .check-box {
-    margin: 10px 0 0 0;
-    font-size: small;
+  display: flex;
+  font: small;
+  justify-content: start;
+  align-items: center;
+  gap: 0.3rem;
+  }
+  .check-box label{
+    margin: 0;
+  }
+  .check-box input{
+    margin: 0;
   }
 
   

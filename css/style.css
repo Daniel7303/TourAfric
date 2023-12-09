@@ -23,30 +23,46 @@ body {
     margin: 0 auto;
     color: white;
   }
+  .hero{
+    background-image: url("/asset/images/imgae\ 1.png");
+    height: 100vh;
+  
+  }
+
 
   .navBar {
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    top: 7%;
+    // position: absolute;
+    // width: 100%;
+    // left: 50%;
+    // top: 7%;
     
-    transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
+    background-color: #003254;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    padding: 4rem;
+    padding: 0.5rem 4rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
     
   }
   .navBar ul {
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 1rem;
   }
-
-  ul li:nth-child(5) {
-    margin-left: 2rem;
+  .navBar a:hover{
+    color: #003254;
   }
+ 
+  // ul li:nth-child(5) {
+  //   margin-left: 2rem;
+  // }
 
   ul li {
     list-style: none;
@@ -63,7 +79,7 @@ body {
     width: 50%;
     top: 15%;
     padding: 4rem;
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .welcome span {
