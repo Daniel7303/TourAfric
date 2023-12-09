@@ -33,7 +33,39 @@ body {
     padding: 4rem;
     
   }
+
+  .logo img {
+    display: block;
+  }
+  
   .navBar ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navBar li {
+    margin-right: 20px;
+  }
+  
+  .navBar a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .burger-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: red;
+    margin: 6px 0;
+  }
+
+ /*  .navBar ul {
     display: flex;
     
     gap: 1rem;
@@ -51,7 +83,7 @@ body {
     color: white;
     font-size: 1rem;
     cursor: pointer;
-  }
+  } */
 
   .welcome {
     position: absolute;
@@ -84,6 +116,7 @@ body {
     overflow: hidden;
     font-size: 0.8rem;
     line-height: 1.2;
+    z-index: 0;
 
   }
   .content-box div {
@@ -148,7 +181,7 @@ body {
 
 
 
-  /* Add more styles as needed for other elements */
+  /* Adding more styles as needed for other elements */
 /* cards */
 .card-section {
   display: flex;
@@ -165,7 +198,7 @@ body {
 .places-section {
   position: relative;
   width: 100%;
-  height: auto; /* Adjust as needed */
+  height: auto; /* Adjusting as needed */
   border-radius: 40px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 3rem;
@@ -186,7 +219,7 @@ body {
   align-items: center;
   position: absolute;
   background: green;
-  top: 0.5rem; /* Adjust top value to your preference */
+  top: 0.5rem;
   right: 1rem; 
   padding: 0.1rem 0.3rem;
   border-radius: 0.5rem;
@@ -260,8 +293,6 @@ body {
 
 .cards-plan {
   flex: 1 1 250px;
-  /* border-radius: 40px; */
- /*  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
   margin-bottom: 1rem; 
   text-align: start;
   
@@ -411,8 +442,6 @@ footer {
 }
 
 .footer .ftt {
- /*  width: 100%;
-  height: 100%; */
   margin-bottom: -1rem;
 
 }
@@ -487,7 +516,7 @@ footer {
   width: 100%;
   height: 1px;
   background: #B4B7B8;
-  margin-top: -1.5rem;
+  margin-top: -0.8rem;
 }
 .copyright{
   display: flex;
@@ -502,22 +531,47 @@ footer {
 
 
 
-@media (max-width: 700px) {
- main {
-    padding: 2rem;
-  }
+@media only screen and (max-width: 768px) {
+
+  /* header section */
   .navBar {
     padding: 2rem 2rem;
-    top: 20%;
-    
-  }
-  .navBar ul {
-    display: none;
-  }
+    top: 12%;
+    z-index: 1;
+    }
+
+    .content-box {
+      position: relative;
+    }
+    ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100px;
+      left: 60%;
+      background-color: #333;
+      width: 35%;
+      text-align: center;
+    }
+  
+    li {
+      margin: 10px 0;
+    }
+  
+    .burger-icon {
+      display: block;
+    }
+
   .welcome {
     font-size: 2rem;
     padding: 2rem;
-    top: 30%;
+    top: 20%;
+  }
+
+/*  main */
+
+  main {
+    padding: 2rem;
   }
   .socials img{
     margin-right: 0.2rem
@@ -533,9 +587,18 @@ footer {
   .places-section {
     flex: 1 1 250px;
   } 
+
+
+ /*  footer section  */
+
+ .footer h3 {
+  font-size: 25px;
+  padding-inline: 20%;
+ }
   .container {
     padding: 0 0.2rem;
   }
+
 
   .socials img{
     margin-right: 0rem;
