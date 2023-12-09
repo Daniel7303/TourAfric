@@ -4,15 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/destinationPage.css" type="text/css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <nav class="navBar">
+      <a class="logo" href="/index.html">
+        <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="" width="150px" />
+      </a>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+
+        <li><a href="/html/aboutUs.html">About us</a></li>
+        <li><a href="/html/contact.html">Contact us</a></li>
+        <!-- <li class="auth"><a href="/html/login.html">Login </a></li>
+        <li class="auth"><a href="/html/signup.html">Signup</a></li> -->
+      </ul>
+    </nav>
+    <!-- <a href="/index.html">
+        <img class="home-img" src="/designs/home.svg" alt="home">
+      </a>
       <div class="logo">
         <img src="/logo/TOUR AFRIK 2 2.png" alt="" />
         <p>Explore the beauty around the world!</p>
-      </div>
-    </header>
+        
+      </div> -->
 
     <section class="intro">
       <h2>Destionations to inspire adventure</h2>
@@ -25,7 +45,11 @@
 
     <div class="container">
       <section class="search">
-        <form action="" class="search-form" onsubmit="filterDestinations(event)">
+        <form
+          action=""
+          class="search-form"
+          onsubmit="filterDestinations(event)"
+        >
           <input
             type="text"
             placeholder="Enter a Destination"
@@ -36,7 +60,7 @@
       </section>
 
       <section class="locations">
-        <div class="not-available" style="display: none;">
+        <div class="not-available" style="display: none">
           <p>Oops! Destination not available at the moment</p>
         </div>
         <div class="first_loc">
@@ -233,7 +257,6 @@
             <button>more</button>
           </div>
         </div>
-      
       </section>
     </div>
 

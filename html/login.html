@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/signup.css" />
+    <link rel="stylesheet" href="/css/style.css">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poppins"
@@ -12,11 +13,24 @@
     <title>Document</title>
   </head>
   <body>
+    <nav class="navBar">
+      <a class="logo" href="/index.html">
+        <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="" width="150px" />
+      
+      </a>
+      <ul >
+        <!-- <li><a href="">Home</a></li> -->
+        <li><a href="/html/destinationPage.html">Destination</a></li>
+        <li><a href="/html/aboutUs.html">About us</a></li>
+        <li><a href="/html/contact.html">Contact us</a></li>
+        <li class="auth"><a href="/html/login.html">Login </a></li>
+        <li class="auth"><a href="/html/signup.html">Signup</a></li>
+      </ul>
+    </nav>
     <div class="sign-up-container">
-        <a href="/index.html">
-            <img class="home-img" src="/designs/home.svg" alt="home">
-          </a>
+       
       <div class="top">
+       
         <h1>Login</h1>
       
        
@@ -42,7 +56,12 @@
           <span class="eye-icon">&#128065</span>
         </div>
 
-      
+        <div class="check-box">
+          <input type="checkbox" required/>
+          <label for="mycheckebox">
+              Remember me
+          </label>
+        </div>
 
           <button type="submit" >Login</button>
           <p class="login">Don't have an Account?&nbsp; <a href="/html/signup.html"> Signup</a></p>
