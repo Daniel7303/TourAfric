@@ -22,10 +22,10 @@ header {
   padding: 5rem;
   font-size: 1.5rem;
 }
-.logo {
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
+// .logo {
+//   margin-top: 50px;
+//   margin-bottom: 30px;
+// }
 
 header p {
   position: relative;
@@ -39,6 +39,9 @@ header p {
   top: 2rem;
   right: 2rem;
   fill: wheat;
+}
+.intro{
+  padding-top: 6rem;
 }
 
 .intro h2 {

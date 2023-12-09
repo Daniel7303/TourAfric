@@ -39,6 +39,7 @@ body {
     // transform: translate(-50%, -50%);
     background-color: #003254;
     display: flex;
+    height: fit-content;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
@@ -56,9 +57,9 @@ body {
     text-align: center;
     gap: 1rem;
   }
-  .navBar a:hover{
-    color: #003254;
-  }
+  // .navBar a:hover{
+  //   color: #003254;
+  // }
  
   // ul li:nth-child(5) {
   //   margin-left: 2rem;
