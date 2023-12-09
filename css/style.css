@@ -26,17 +26,13 @@ body {
   .hero{
     background-image: url("/asset/images/imgae\ 1.png");
     height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
   
   }
 
 
   .navBar {
-   /*  // position: absolute;
-    // width: 100%;
-    // left: 50%;
-    // top: 7%;
-    
-    // transform: translate(-50%, -50%); */
     background-color: #003254;
     display: flex;
     height: fit-content;
@@ -48,39 +44,38 @@ body {
     top: 0;
     width: 100%;
     z-index: 999;
-    
-  }
+}
 
-  .logo img {
+.logo img {
     display: block;
-  }
-  
-  .navBar ul {
+}
+
+.navBar ul {
     list-style-type: none;
     display: flex;
-  }
-  
-  .navBar li {
+}
+
+.navBar li {
     margin-right: 20px;
-  }
-  
-  .navBar a {
+}
+
+.navBar a {
     text-decoration: none;
     color: white;
-  }
-  
-  .burger-icon {
+}
+
+.burger-icon {
     display: none;
     flex-direction: column;
     cursor: pointer;
-  }
-  
-  .bar {
+}
+
+.bar {
     width: 25px;
     height: 3px;
-    background-color: red;
+    background-color: white;
     margin: 6px 0;
-  }
+}
 
  /*  .navBar ul {
     display: flex;
@@ -89,6 +84,7 @@ body {
     text-align: center;
     gap: 1rem;
   }
+  /*
   .navBar img{
     width: 10rem;
   }
@@ -561,12 +557,29 @@ footer {
   /* header section */
   .navBar {
     padding: 2rem 2rem;
-    top: 20%;
-    
-  }
-  .navBar ul {
+    top: 0%;
+}
+
+.navBar ul {
     display: none;
-  }
+    flex-direction: column;
+    position: absolute;
+    top: 7em; /* Adjusted to 70px for better positioning */
+    right: 0;
+    background: #003254;
+    width: 30%;
+    z-index: 1;
+    gap: 1rem;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+
+.burger-icon {
+    display: flex;
+}
+  
   .welcome {
     font-size: 2rem;
     padding: 2rem;

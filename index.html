@@ -8,7 +8,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poppins"
     />
-    <title>Tourafrik</title>
+    <title>Your Page Title</title>
+    <style></style>
   </head>
   <body>
     <header>
@@ -18,20 +19,26 @@
         width="100%"
       /> -->
       <!-- <div class="overlay"></div> -->
-      <nav class="navBar">
-        <div class="logo">
-          <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="" width="200px" />
-          <!--   <p>TOURAFRIK</p> -->
-        </div>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="/html/destinationPage.html">Destination</a></li>
-          <li><a href="">About us</a></li>
-          <li><a href="/html/contact.html">Contact us</a></li>
-          <li><a href="">Login </a></li>
-          <li><a href="/html/signup.html">Sign up</a></li>
-        </ul>
-      </nav>
+      <div class="hero">
+        <nav class="navBar">
+          <a class="logo" href="/index.html">
+            <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="" width="150px" />
+          </a>
+          <ul>
+            <!-- <li><a href="">Home</a></li> -->
+            <li><a href="/html/destinationPage.html">Destination</a></li>
+            <li><a href="/html/aboutUs.html">About us</a></li>
+            <li><a href="/html/contact.html">Contact us</a></li>
+            <li class="auth"><a href="/html/login.html">Login </a></li>
+            <li class="auth"><a href="/html/signup.html">Signup</a></li>
+          </ul>
+          <div class="burger-icon" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </nav>
+      </div>
       <h1 class="welcome"><span>Explore the beauty</span> around us.</h1>
       <!-- content box -->
       <div class="content-box">
@@ -83,10 +90,10 @@
           </div>
           <div class="tools">
             <img src="/asset/icons/world.svg" alt="" />
-            <p>Travel around the world</p>
+            <p>Search Your Destination</p>
             <span
-              >"Explore and wonder tirelessly, for only then shall you reach the
-              destination of your dreams."</span
+              >"Travel far and wide, Explore every corner, search your dream
+              destination"</span
             >
           </div>
         </div>
@@ -109,7 +116,8 @@
               ><img src="/asset/icons/Star 5.svg" alt="" /> 4.8</span
             >
             <div class="places_location">
-              <p>Mambase Island</p>
+              <span></span>
+              <p>Beijing</p>
               <span>
                 <svg
                   width="18"
@@ -124,7 +132,7 @@
                   />
                 </svg>
 
-                <p>Kenya</p>
+                <p>China</p>
               </span>
             </div>
             <button>view</button>
@@ -135,7 +143,7 @@
               ><img src="/asset/icons/Star 5.svg" alt="" /> 4.8</span
             >
             <div class="places_location">
-              <p>Addu City</p>
+              <p>Beijing</p>
               <span>
                 <svg
                   width="18"
@@ -150,7 +158,7 @@
                   />
                 </svg>
 
-                <p>Maldives</p>
+                <p>China</p>
               </span>
             </div>
             <button>view</button>
@@ -158,10 +166,10 @@
           <div class="places-section">
             <img src="/asset/images/image 18.png" alt="" />
             <span class="starRat"
-              ><img src="/asset/icons/Star 5.svg" alt="" /> 4.4</span
+              ><img src="/asset/icons/Star 5.svg" alt="" /> 4.8</span
             >
             <div class="places_location">
-              <p>Gardeb City</p>
+              <p>Beijing</p>
               <span>
                 <svg
                   width="18"
@@ -176,7 +184,7 @@
                   />
                 </svg>
 
-                <p>Singapore</p>
+                <p>China</p>
               </span>
             </div>
             <button>view</button>
@@ -197,7 +205,7 @@
               ><img src="/asset/icons/Star 5.svg" alt="" /> 4.8</span
             >
             <div class="places_location">
-              <p>Cairo</p>
+              <p>Beijing</p>
               <span>
                 <svg
                   width="18"
@@ -212,7 +220,7 @@
                   />
                 </svg>
 
-                <p>Egypt</p>
+                <p>China</p>
               </span>
             </div>
             <button>view</button>
@@ -220,10 +228,10 @@
           <div class="places-section">
             <img src="/asset/images/image 21.png" alt="" />
             <span class="starRat"
-              ><img src="/asset/icons/Star 5.svg" alt="" /> 4.3</span
+              ><img src="/asset/icons/Star 5.svg" alt="" /> 4.8</span
             >
             <div class="places_location">
-              <p>Dubai City</p>
+              <p>Beijing</p>
               <span>
                 <svg
                   width="18"
@@ -238,7 +246,7 @@
                   />
                 </svg>
 
-                <p>UAE</p>
+                <p>China</p>
               </span>
             </div>
             <button>view</button>
@@ -246,10 +254,10 @@
           <div class="places-section">
             <img src="/asset/images/image 20.png" alt="" />
             <span class="starRat"
-              ><img src="/asset/icons/Star 5.svg" alt="" /> 4.4</span
+              ><img src="/asset/icons/Star 5.svg" alt="" /> 4.8</span
             >
             <div class="places_location">
-              <p>Cape Town</p>
+              <p>Beijing</p>
               <span>
                 <svg
                   width="18"
@@ -264,7 +272,7 @@
                   />
                 </svg>
 
-                <p>South Africa</p>
+                <p>China</p>
               </span>
             </div>
             <button>view</button>
@@ -282,10 +290,10 @@
           <div class="places-section">
             <img src="/asset/images/image 22.png" alt="" />
             <span class="starRat"
-              ><img src="/asset/icons/Star 5.svg" alt="" /> 4.9</span
+              ><img src="/asset/icons/Star 5.svg" alt="" /> 4.8</span
             >
             <div class="places_location">
-              <p>East Coast</p>
+              <p>Beijing</p>
               <span>
                 <svg
                   width="18"
@@ -300,7 +308,7 @@
                   />
                 </svg>
 
-                <p>USA</p>
+                <p>China</p>
               </span>
             </div>
             <button>view</button>
@@ -308,10 +316,10 @@
           <div class="places-section">
             <img src="/asset/images/image 23.png" alt="" />
             <span class="starRat"
-              ><img src="/asset/icons/Star 5.svg" alt="" /> 4.9</span
+              ><img src="/asset/icons/Star 5.svg" alt="" /> 4.8</span
             >
             <div class="places_location">
-              <p>Dubai City</p>
+              <p>Beijing</p>
               <span>
                 <svg
                   width="18"
@@ -326,7 +334,7 @@
                   />
                 </svg>
 
-                <p>UAE</p>
+                <p>China</p>
               </span>
             </div>
             <button>view</button>
@@ -337,7 +345,7 @@
               ><img src="/asset/icons/Star 5.svg" alt="" /> 4.8</span
             >
             <div class="places_location">
-              <p>China City</p>
+              <p>Beijing</p>
               <span>
                 <svg
                   width="18"
@@ -352,7 +360,7 @@
                   />
                 </svg>
 
-                <p>China Town</p>
+                <p>China</p>
               </span>
             </div>
             <button>view</button>
@@ -559,5 +567,7 @@
         </div>
       </section>
     </footer>
+    <script src="/script.js"></script>
+    <script src="/Javascript/signup.js"></script>
   </body>
 </html>
