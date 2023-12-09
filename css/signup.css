@@ -1,140 +1,147 @@
 body {
-    font-family: "Poppins";
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // height: 100vh; /* Ensure full height of the viewport */
-    margin: 0;
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // height: 100vh; /* Ensure full height of the viewport */
+  margin: 0;
+  background-image: url("/asset/images/river.jpg");
+  background-size: cover; /* Adjust the background size property */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
 
 .sign-up-container {
-    
-    min-width: 600px;
-    padding: 2rem;
-    padding-top: 6rem;
-    border-radius: 8px;
+  min-width: 600px;
+  padding: 2rem;
+  margin-top: 8rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  backdrop-filter: blur(5px); /* Adjust the blur radius as needed */
+  background: rgba(255, 255, 255, 0.5); /* Adjust the background color and alpha as needed */
+
 }
-.home-img{
-    height: 2rem ;
-    width: 2rem;
-    // position: absolute;
-    // top: 1rem;
-    // right: 1rem;
+.home-img {
+  height: 2rem;
+  width: 2rem;
+  // position: absolute;
+  // top: 1rem;
+  // right: 1rem;
 }
 
 .top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .top a {
-    margin-right: auto; /* Push the anchor to the left */
+  margin-right: auto; /* Push the anchor to the left */
 }
 
 .top h1 {
-    flex: 1;
-    text-align: center; /* Center the "Sign Up" heading */
+  flex: 1;
+  text-align: center; /* Center the "Sign Up" heading */
 }
 
 h2 {
-    margin-top: -2px;
-    font-weight: 400;
+  // margin-top: -2px;
+  font-weight: 400;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    
+  display: flex;
+  flex-direction: column;
 }
 
 label {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 input {
-    background: rgba(128, 128, 128, 0.687);
-    padding: 0.7rem;
-    border: none;
-    border-radius: 7px;
-    outline: none;
-    margin: -8px 0 15px 0;
+  background: rgba(222, 222, 222, 0.687);
+  padding: 0.7rem;
+  border: none;
+  border-radius: 7px;
+  outline: none;
+  margin: -8px 0 15px 0;
 }
 .password-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 .eye-icon {
-    position: absolute;
-    right: 2%;
-    top: 50%;
-    transform: translateY(-30%);
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-30%);
 }
 
 button {
-    margin-top: 1.8rem;
-    padding: 0.8rem;
-    background: rgb(6, 6, 71);
-    color: white;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  padding: 0.8rem;
+  background: rgb(0, 50, 84);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
 }
-  
+
+
 /* style the checkbox */
-  .check-box {
+.check-box {
   display: flex;
   font: small;
   justify-content: start;
   align-items: center;
   gap: 0.3rem;
-  }
-  .check-box label{
-    margin: 0;
-  }
-  .check-box input{
-    margin: 0;
-  }
+}
+.check-box label {
+  margin: 0;
+}
+.check-box input {
+  margin: 0;
+}
 
-  
 .center-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
 }
 .center-text p {
-    color: rgba(0, 0, 0, 0.635);
-   }
-   .text {
-       margin: 0 20px;
-       font-weight: bold;
-   }
-   hr {
-       flex-grow: 1;
-       border: none;
-       height: 1px;
-       background-color: rgba(0, 0, 0, 0.189);
-   }
+  color: rgba(0, 0, 0, 0.635);
+}
+.text {
+  margin: 0 20px;
+  font-weight: bold;
+}
+hr {
+  flex-grow: 1;
+  border: none;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.189);
+}
 
-   .media-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    margin-top: 2rem;
-   }
+.media-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
 
-   .media-logos img {
-    width: 50px;
-   }
+.media-logos img {
+  width: 50px;
+}
 
-   .login{
-    display: flex;
-    justify-content: center;
-   }
-   .login a{
-    text-decoration: none;
-    color: blue;
-   }
+.login {
+  display: flex;
+  justify-content: center;
+}
+.login a {
+  text-decoration: none;
+  color: blue;
+}
