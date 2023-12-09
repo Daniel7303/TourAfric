@@ -49,35 +49,38 @@ header p {
 }
 
 .container {
-  padding: 0px 150px 0 150px;
+    padding: 5rem;
 }
 
 /* The search bar */
+
 .search {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 9rem; 
 }
 .search-input {
-  width: 60%;
-  height: 4rem;
-  border-radius: 20px;
-  border: none;
-  background: #d9d9d9;
-  padding-left: 1rem;
+    width: 100%;
+    background: #d9d9d9;
+    padding: 0.7rem;
+    border: none;
+    outline:#0e3854;
+    margin-left: 1rem;
 }
 .search-form{
-    position: relative;
+    margin: 0 auto;
+    background: #d9d9d9;
+    width: 60%;
+    padding: 1rem 1rem;
+    border-radius: 1.2rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .search-form button {
-  position: absolute;
-  top: 25%;
-  right: 22%;
-  padding: 10px 40px 10px 40px;
+ cursor: pointer;
+  padding: 8px 40px 8px 40px;
   border: none;
   color: white;
   background: #0e3854;
@@ -88,16 +91,20 @@ header p {
   padding: 20px;
 }
 
+
+/* Destionation location */
+
 .first_loc {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 20px;
   width: 100%;
 }
 
 .places {
-  width: 28%;
-  height: 29rem;
+position: relative;
+  width: 50%;
+  height: auto;
   border-radius: 40px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 3rem;
@@ -105,13 +112,32 @@ header p {
 
 .places img {
   width: 100%;
-  height: 21rem;
+  height: 19rem;
 }
+.starRat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: green;
+    top: 0.9rem; /* Adjust top value to your preference */
+    right: 1rem; 
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .starRat img {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+
 .places h3 {
-  text-align: center;
-  padding: 0.5rem 0 0.9rem;
+  text-align: left;
+  padding: 0.5rem 2rem 0.9rem;
   font-size: 1.4rem;
-  color: #296592;
+  color: black;
 }
 .places_loc {
   display: flex;
@@ -121,7 +147,10 @@ header p {
 }
 
 .places button {
-  float: left;
+    margin: 1rem 1.2rem 1rem 2rem;
+    cursor: pointer;
+  float: right;
+  text-transform: capitalize;
   background: #0e3854;
   color: white;
   padding: 10px 32px;
@@ -131,6 +160,9 @@ header p {
 
 /* Footer */
 
+.foot_container{
+    padding: 0 4rem;
+}
 .explore {
   background: url(/asset/images/footer.png) center/cover no-repeat;
   width: 100%;
@@ -156,6 +188,7 @@ header p {
 }
 
 .foot_one img {
+    padding-top: 1rem;
   width: 150px;
 }
 .follow {
@@ -171,6 +204,10 @@ header p {
   width: 20px;
   margin-top: 10px;
 }
+.follow_img {
+    display: flex;
+    gap: 4px;
+  }
 
 .infos {
   display: flex;
@@ -206,6 +243,7 @@ header p {
   width: 3px;
   background: #b4b7b8;
 }
+
 .hori-line {
   width: 100%;
   height: 3px;
@@ -215,5 +253,21 @@ header p {
 .copyright {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2px;
+  padding-bottom: 2rem;
+}
+
+
+
+@media (max-width: 700px){
+    .container{ padding: 2rem;}
+
+    .first_loc{
+        flex-wrap: wrap;
+    }
+
+    .places{
+        flex: 1 1 250px;
+    }
+    .foot_container{padding: 2rem;}
+
 }
