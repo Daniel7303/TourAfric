@@ -46,7 +46,7 @@ header{
 }
 /* section */
 
-.welcome p{
+.about p{
     text-align: center;
     padding-inline: 25%;
     line-height: 2;
@@ -55,6 +55,7 @@ header{
     font-weight: 400;
     font-size: 1.3rem;
     align-items: center;
+    padding-top: 2rem;
     
     
 }
