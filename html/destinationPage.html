@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/destinationPage.css" type="text/css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Poppins"
     />
     <title>Document</title>
   </head>
@@ -43,7 +45,8 @@
       </p>
     </section>
 
-    <div class="container">
+    <!--The Search box-->
+    <div class="box">
       <section class="search">
         <form
           action=""
@@ -59,6 +62,8 @@
         </form>
       </section>
 
+      <!--Locations Section-->
+      <!--One-->
       <section class="locations">
         <div class="not-available" style="display: none">
           <p>Oops! Destination not available at the moment</p>
@@ -66,6 +71,9 @@
         <div class="first_loc">
           <div class="places" id="mambase-island">
             <img src="/asset/images/image 2.png" alt="" />
+            <span class="starRat"
+              ><img src="/asset/icons/Star 5.svg" alt="" /> 4.8</span
+            >
             <h3>Mambase island</h3>
             <div class="places_loc">
               <svg
@@ -87,6 +95,9 @@
           </div>
           <div class="places" id="addu-city">
             <img src="/asset/images/image 17 (1).png" alt="" />
+            <span class="starRat"
+              ><img src="/asset/icons/Star 5.svg" alt="" /> 4.8</span
+            >
             <h3>Addu city</h3>
             <div class="places_loc">
               <svg
@@ -108,6 +119,9 @@
           </div>
           <div class="places" id="garden-city">
             <img src="/asset/images/image 18.png" alt="" />
+            <span class="starRat"
+              ><img src="/asset/icons/Star 5.svg" alt="" /> 4.8</span
+            >
             <h3>Garden city</h3>
             <div class="places_loc">
               <svg
@@ -128,9 +142,15 @@
             <button>more</button>
           </div>
         </div>
+
+        <!--Two-->
+
         <div class="first_loc">
           <div class="places" id="cairo">
             <img src="/asset/images/image 19.png" alt="" />
+            <span class="starRat"
+              ><img src="/asset/icons/Star 5.svg" alt="" /> 4.8</span
+            >
             <h3>Cairo</h3>
             <div class="places_loc">
               <svg
@@ -152,6 +172,9 @@
           </div>
           <div class="places" id="dubai">
             <img src="/asset/images/image 21.png" alt="" />
+            <span class="starRat"
+              ><img src="/asset/icons/Star 5.svg" alt="" /> 4.8</span
+            >
             <h3>Dubai</h3>
             <div class="places_loc">
               <svg
@@ -172,6 +195,9 @@
           </div>
           <div class="places" id="cape-town">
             <img src="/asset/images/image 20.png" alt="" />
+            <span class="starRat"
+              ><img src="/asset/icons/Star 5.svg" alt="" /> 4.8</span
+            >
             <h3>Cape Town</h3>
             <div class="places_loc">
               <svg
@@ -192,9 +218,15 @@
             <button>more</button>
           </div>
         </div>
+
+        <!--Three-->
+
         <div class="first_loc">
           <div class="places" id="east-coast">
             <img src="/asset/images/image 22.png" alt="" />
+            <span class="starRat"
+              ><img src="/asset/icons/Star 5.svg" alt="" /> 4.8</span
+            >
             <h3>East Coast</h3>
             <div class="places_loc">
               <svg
@@ -216,6 +248,9 @@
           </div>
           <div class="places" id="abu-dhabi">
             <img src="/asset/images/image 24.png" alt="" />
+            <span class="starRat"
+              ><img src="/asset/icons/Star 5.svg" alt="" /> 4.8</span
+            >
             <h3>Abu Dhabi</h3>
             <div class="places_loc">
               <svg
@@ -237,6 +272,9 @@
           </div>
           <div class="places" id="beijing">
             <img src="/asset/images/image 5.png" alt="" />
+            <span class="starRat"
+              ><img src="/asset/icons/Star 5.svg" alt="" /> 4.8</span
+            >
             <h3>Beijing</h3>
             <div class="places_loc">
               <svg
@@ -262,13 +300,13 @@
 
     <!--The Footer-->
     <footer>
-      <div class="explore">
+      <div class="xplore">
         <h3>Explore the beauty around you today!</h3>
       </div>
 
       <section class="foot_one">
-        <div class="container">
-          <img src="/logo/TOUR AFRIK 2 3.png" alt="" />
+        <div class="foot_container">
+          <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="" />
           <div class="follow">
             <div class="socials">
               <p>follow us:</p>
@@ -285,7 +323,7 @@
                 <div class="line-con">
                   <div class="line"></div>
                   <ol>
-                    <a href="about.html">About Us</a>
+                    <a href="/html/aboutUs.html">About Us</a>
                     <a href="">Our Services</a>
                     <a href="">Career</a>
                   </ol>
@@ -308,7 +346,7 @@
                   <div class="line"></div>
                   <ol>
                     <li>Travel</li>
-                    <a href="">Destination</a>
+                    <a href="/html/destinationPage.html">Destination</a>
                     <li>review</li>
                   </ol>
                 </div>
