@@ -78,6 +78,19 @@ header {
   white-space: nowrap;
 }
 
+/* adding overlay to the header */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: ;
+}
+
+
 /*  style the content box */
 .content-box {
   position: absolute;
@@ -398,9 +411,10 @@ footer {
   color: #1f4d6f;
 }
 
-.footer .ftt {
-  margin-bottom: -1rem;
-}
+./* footer .ftt {
+  margin-bottom: -rem;
+} */
+
 .container {
   padding: 0 4rem;
 }
@@ -410,6 +424,7 @@ footer {
   flex-direction: column;
   background: #003254;
   color: white;
+  padding: 0 2rem;
 }
 
 .foot_one img {
@@ -553,6 +568,9 @@ footer {
   }
 
   /*  footer section  */
+  .foot_one {
+    padding: 0 1rem;
+  }
 
   .footer h3 {
     font-size: 25px;
@@ -601,4 +619,30 @@ footer {
     font-size: 1.5rem;
     width: 300px;
   }
+
+ /*  footer */
+ .foot_one {
+  padding: 0 0.5rem;
+ }
+
+ .flogo {
+  margin-bottom: -1rem;
+ }
+  .container {
+    padding: 0 0.1rem;
+  }
+
+  .socials img {
+    width: 1rem;
+    margin-right: 0rem;
+  }
+
+  .line-con {
+    gap: 0.2rem;
+  }
+
+  .foot_one {
+    font-size: 0.5rem;
+  }
+  
 }
