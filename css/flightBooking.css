@@ -15,11 +15,11 @@
 }
 .headerContainer{
     width: 100%;
-    height: 496px;
+    height: 31rem;
     transform: rotate(0.004deg);
     flex-shrink: 0;
-    background: var(--color-secondary-500, #0E3854);
     position: relative;
+    margin-bottom: 15rem;
 }
 .headerNav{
     width: 75%;
@@ -40,7 +40,7 @@ line-height: 2rem; /* 32.2px */
     flex: 2;
     object-fit: contain;
     width: 10.74rem;
-    height: 65px;
+    height: 4.06rem;
     flex-shrink: 0;
     
 }
@@ -80,15 +80,44 @@ margin-bottom: 1.3rem;
 border-radius: 1.56rem;
 background:  #D9D9D9;
 z-index: 2;
-position: a;
+position: absolute;
+bottom: -7.5rem;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
+@media only screen and (max-width: 600px) {
+    .summary {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0.9rem;
+       width: 30re;
+       height: 8rem;
+       flex-shrink: 0;
+       margin-bottom: 0.7rem;
+       border-radius: 0.8rem;
+       background:  #D9D9D9;
+       z-index: 2;
+       position: absolute;
+       bottom: -70px;
+       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+       }
+    }
+  
 .topContainer{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
 }
+@media only screen and (max-width: 600px) {
+    .topContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+    }
+    }
 .oneWay{
     flex: 1;
     display: flex;
@@ -103,12 +132,17 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-weight: 400;
     line-height: 32px;
 }
-.oneWay img{
- width: 26.25px;
-height: 25px;
-flex-shrink: 0;
-color: #fff;
-}
+@media only screen and (max-width: 600px) {
+    .oneWay h5{
+        color: #000;
+        font-family: Poppins;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+    }}
+
+
 .roundTrip{
     flex: 2;
     display: flex;
@@ -123,13 +157,28 @@ font-style: normal;
 font-weight: 400;
 line-height: 32px; /* 32.2px */
 }
-
+@media only screen and (max-width: 600px) {
+    .roundTripImg {
+        width: 15px;
+        height: 15px;
+        object-fit: contain;
+    }}
+@media only screen and (max-width: 600px) {
+    .roundTrip h5{
+        color: #000;
+        font-family: Poppins;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+    }}
 .oneWay img{
     fill: #E53838;
     width: 26.25px;
 height: 25px;
 flex-shrink: 0;
 }
+
 .bottomContainer{
     display: flex;
     align-items: center;
@@ -150,6 +199,14 @@ flex-shrink: 0;
     margin-bottom: 5px;
     justify-content: space-between;
 }
+@media only screen and (max-width: 600px) {
+    .infoContainer{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 2.5px;
+        justify-content: space-between;
+    } }
 .info h2{
 color: #000;
 font-family: Poppins;
@@ -158,6 +215,15 @@ font-style: normal;
 font-weight: 400;
 line-height: 2rem; /* 32.2px */
 }
+@media only screen and (max-width: 600px) {
+    .info h2{
+        color: #000;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1rem; /* 32.2px */
+        } }
  .info .infoContainer{
     width: 10rem;
     height: 4rem;
@@ -168,6 +234,17 @@ line-height: 2rem; /* 32.2px */
     border-radius: 8px;
 background: var(--color-primary-500, #FFF);
 }
+@media only screen and (max-width: 600px) {
+    .info .infoContainer{
+        width: 5rem;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        border-radius: 5px;
+    background: var(--color-primary-500, #FFF);
+    }  }
 .infoContainer h2{
 color: rgba(0, 0, 0, 0.72);
 font-family: Poppins;
@@ -176,12 +253,28 @@ font-style: normal;
 font-weight: 400;
 line-height: 22.2px; /* 22.4px */
 }
+@media only screen and (max-width: 600px) {
+    .infoContainer h2{
+        color: rgba(0, 0, 0, 0.72);
+        font-family: Poppins;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 10.2px; /* 22.4px */
+        }  }
 .infoContainer img{
  width: 35px;
 height: 35px;
 flex-shrink: 0;
  color:#777777 ;
 }
+@media only screen and (max-width: 600px) {
+    .infoContainer img{
+        width: 17px;
+       height: 17px;
+       flex-shrink: 0;
+        color:#777777 ;
+       }  }
 .infoContainer h3{
 color: rgba(0, 0, 0, 0.72);
 font-family: Poppins;
@@ -192,21 +285,51 @@ line-height: 22px;
 border: none;
 outline: none;
 }
+@media only screen and (max-width: 600px) {
+    .infoContainer h3{
+        color: rgba(0, 0, 0, 0.72);
+        font-family: Poppins;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 11px; 
+        border: none;
+        outline: none;
+        } }
 .searchBtn{
  display: flex;
 width: 200px;
 height: 50px;
 padding: 7px;
+border: none;
 justify-content: center;
 align-items: center;
 flex-shrink: 0;
 border-radius: 10px;
 background: #003254;
 color: #fff;
+margin-top: 28px;
 }
+@media only screen and (max-width: 600px) {
+    .searchBtn{
+        display: flex;
+       width: 120px;
+       height: 40px;
+       padding: 3px;
+       justify-content: center;
+       align-items: center;
+       flex-shrink: 0;
+       border-radius: 8px;
+       background: #003254;
+       color: #fff;
+       border: none;
+       margin-top: 25px;
+       }
+   
+       }
 
 .cheapAirlines{
- margin-top: 5rem;
+ margin-top: 10rem;
 width: 70%;
 flex-shrink: 0;
 display: flex;
@@ -215,9 +338,23 @@ position: relative;
 justify-content: center;
 gap: 10px;
 }
+@media only screen and (max-width: 600px) {
+   
+.cheapAirlines{
+    margin-top: 5rem;
+   width: 70%;
+   flex-shrink: 0;
+   display: flex;
+   align-items: center;
+   position: relative;
+   justify-content: center;
+   gap: 5px;
+   }
+       }
 .airlineContainer{
     display: block;
 }
+
 .title{
  color: #000;
  display: block;
@@ -230,20 +367,37 @@ line-height: 29px; /* 29.4px */
 .airline{
 flex-shrink: 0;
 border-radius: 40px;
+width: 35%;
 overflow: hidden;
 position: relative;
 padding: 0;
 display: flex;
-border-radius: 40px;
+
 align-items: center;
 align-items: center;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+@media only screen and (max-width: 600px) {
+    .airline{
+        flex-shrink: 0;
+        border-radius: 15px;
+        width: 35%;
+        overflow: hidden;
+        position: relative;
+        padding: 0;
+        display: flex;
+        
+        align-items: center;
+        align-items: center;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+       }
 .airlineImg{
     width: 100%;
-    height: 420px;
+    height: 100%;
     object-fit: cover;
-    z-index: -1;
+    border-radius: 10px;
+
 }
 .countries{
     display: flex;
@@ -254,6 +408,16 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     top: 10px;
     padding: 1rem;
 }
+
+
+@media only screen and (max-width: 600px) {
+    
+    .airImg{
+        width: 10px;
+        height: 10px;
+        object-fit: contain;
+        }
+       }
 .airline h1{
 color: #FFF;
 font-family: Poppins;
@@ -263,6 +427,18 @@ font-weight: 400;
 z-index: 99;
 line-height: 22.4px; /* 22.4px */
 }
+@media only screen and (max-width: 600px) {
+    
+    .airline h1{
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 6px;
+        font-style: normal;
+        font-weight: 700;
+        z-index: 99;
+        line-height: 10.4px; /* 22.4px */
+        }
+       }
 .airline span{
     display: flex;
     position: absolute;
@@ -276,6 +452,104 @@ line-height: 22.4px; /* 22.4px */
     font-weight: 500;
     line-height: normal;
 }
+@media only screen and (max-width: 600px) {
+    
+    .airline span{
+        display: flex;
+        position: absolute;
+        gap: 5px;
+        bottom: 5px;
+        padding: 0.5rem;
+        color: #fff;
+        font-family: Poppins;
+        font-size: 11.333px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        }
+       }
+
 .popular{
     
+}
+
+
+.footer{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+width: 100%;
+height: 328px;
+justify-content: space-between;
+align-items: flex-start;
+flex-shrink: 0;
+position: relative;
+}
+footer img{
+ width: 112px;
+height: 40px;
+position: absolute;
+left: 121px;
+top: 144px;
+}
+.top h1{
+  color: #1F4D6F;
+  font-size: 48px;
+   font-family: Poppins; 
+   font-weight: 700; 
+   line-height: 67.20px; 
+   
+}
+
+.top{
+ display: flex;
+ align-items: center;
+ justify-content: center; 
+ background: rgba(255, 255, 255, 0);
+     border-radius: 30px;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.socials{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.category{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .footer hr{
+
+ }
+.copyright{
+  
 }
