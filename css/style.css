@@ -500,6 +500,11 @@ footer {
     padding: 2rem;
   }
 
+.hero-image {
+  height: 500px;
+}
+
+
   .burger-icon {
     display: flex;
   }
@@ -566,7 +571,8 @@ footer {
   }
 }
 
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 570px)  {
+
   header .header-background {
     height: 50vh;
   }
