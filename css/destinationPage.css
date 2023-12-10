@@ -22,10 +22,10 @@ header {
   padding: 5rem;
   font-size: 1.5rem;
 }
-// .logo {
+/* .logo {
 //   margin-top: 50px;
 //   margin-bottom: 30px;
-// }
+// } */
 
 header p {
   position: relative;
@@ -59,8 +59,8 @@ header p {
   line-height: 1.5rem;
 }
 
-.container {
-  padding: 0px 150px 0 150px;
+.box {
+  padding: 5rem
 }
 
 /* The search bar */
@@ -68,27 +68,29 @@ header p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 9rem; 
 }
 .search-input {
-  width: 60%;
-  height: 4rem;
-  border-radius: 20px;
-  border: none;
+  width: 100%;
   background: #d9d9d9;
-  padding-left: 1rem;
+  padding: 0.7rem;
+  border: none;
+  outline:#0e3854;
+  margin-left: 1rem;
 }
 .search-form {
-  position: relative;
+  margin: 0 auto;
+  background: #d9d9d9;
+  width: 60%;
+  padding: 1rem 1rem;
+  border-radius: 1.2rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .search-form button {
-  position: absolute;
-  top: 25%;
-  right: 22%;
-  padding: 10px 40px 10px 40px;
+  cursor: pointer;
+  padding: 8px 40px 8px 40px;
   border: none;
   color: white;
   background: #0e3854;
@@ -99,16 +101,19 @@ header p {
   padding: 20px;
 }
 
+/*  locations section */
+
 .first_loc {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 20px;
   width: 100%;
 }
 
 .places {
-  width: 28%;
-  height: 29rem;
+  position: relative;
+  width: 50%;
+  height: auto;
   border-radius: 40px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 3rem;
@@ -116,13 +121,31 @@ header p {
 
 .places img {
   width: 100%;
-  height: 21rem;
+  height: 19rem;
+}
+
+.starRat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: green;
+  top: 0.9rem; /* Adjust top value to your preference */
+  right: 1rem; 
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+.starRat img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
 }
 .places h3 {
-  text-align: center;
-  padding: 0.5rem 0 0.9rem;
+  text-align: left;
+  padding: 0.5rem 2rem 0.9rem;
   font-size: 1.4rem;
-  color: #296592;
+  color: black;
 }
 .places_loc {
   display: flex;
@@ -132,30 +155,32 @@ header p {
 }
 
 .places button {
-  float: left;
-  background: #0e3854;
-  color: white;
-  padding: 10px 32px;
-  border: none;
-  border-radius: 15px;
+  margin: 1rem 1.2rem 1rem 2rem;
+  cursor: pointer;
+float: right;
+text-transform: capitalize;
+background: #0e3854;
+color: white;
+padding: 10px 32px;
+border: none;
+border-radius: 15px;
 }
 
 /* Footer */
+.foot_container{padding: 0 5rem;}
 
-.explore {
+.xplore {
   background: url(/asset/images/footer.png) center/cover no-repeat;
   width: 100%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
 
-.explore h3 {
+.xplore h3 {
   text-align: center;
   font-size: 40px;
   padding-inline: 35%;
-  color: #1f4d6f;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  color: #1F4D6F;
 }
 
 .foot_one {
@@ -168,6 +193,7 @@ header p {
 
 .foot_one img {
   width: 150px;
+  margin-top: 1rem;
 }
 .follow {
   display: flex;
@@ -227,4 +253,43 @@ header p {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2px;
+}
+
+/* Responsiveness */
+
+@media (max-width: 700px){
+  .box{ padding: 0 1rem;}
+
+  .intro h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 500;
+  }
+
+  .intro p{text-align: center;
+    padding-inline: 3rem;
+    margin-bottom: 7rem;
+    line-height: 1.5rem;
+}
+
+.search-form button {
+  padding: 1rem;
+}
+.search-input::placeholder {
+  padding: 0.5rem;
+}
+  .first_loc{
+      flex-wrap: wrap;
+  }
+
+  .places{
+      flex: 1 1 250px;
+  }
+  .foot_container{padding: 1rem;}
+
+  .xplore h3 {
+    font-size: 25px;
+    padding-inline: 20%;
+}
+
 }
