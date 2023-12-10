@@ -427,8 +427,8 @@ footer {
   padding: 0 2rem;
 }
 
-.foot_one img {
-  width: 150px;
+.flogo {
+  width: 130px;
 }
 .follow {
   display: flex;
@@ -436,11 +436,11 @@ footer {
   width: 100%;
 }
 .socials {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 .socials img {
   width: 30px;
-  margin-top: 10px;
+  margin-top: 0.2rem;
   margin-right: 1rem;
 }
 .follow_img {
@@ -626,12 +626,15 @@ footer {
  }
 
  .flogo {
+  width: ;
   margin-bottom: -1rem;
  }
   .container {
     padding: 0 0.1rem;
   }
-
+  .socials {
+    margin-top: 1.3rem;
+  }
   .socials img {
     width: 1rem;
     margin-right: 0rem;
@@ -640,9 +643,15 @@ footer {
   .line-con {
     gap: 0.2rem;
   }
+  .line {
+    height: 50px;
+    width: 1px;
+    background: #b4b7b8;
+  }
 
   .foot_one {
     font-size: 0.5rem;
   }
+ 
   
 }
