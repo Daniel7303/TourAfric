@@ -22,15 +22,7 @@ body {
     margin: 0 auto;
     color: white;
   }
-/*   .hero{
-    background-image: url("/asset/images/imgae\ 1.png");
-    height: 50vh;
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  
-  } */
+
 
   header .header-background {
     position: absolute;
@@ -82,35 +74,7 @@ body {
     margin: 3px 0;
 }
 
- /*  .navBar ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-  }
-  /*
-  .navBar img{
-    width: 10rem;
-  }
-  // .navBar a:hover{
-  //   color: #003254;
-  // }
  
-  // ul li:nth-child(5) {
-  //   margin-left: 2rem;
-  // }
-
-  ul li {
-    list-style: none;
-  }
-  ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-  } */
-
   .welcome {
     position: absolute;
     width: 50%;
