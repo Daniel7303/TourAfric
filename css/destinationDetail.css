@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800;900&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins';
+}
+.hero-image {
+  height: 100%;
+  width: 100%;
+}
+.hero {
+  width: 1200px;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  margin-bottom: 30px;
+}
+.sub-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-images img {
+  height: 200px;
+  width: 260px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+header {
+  font-size: 36px;
+  margin-left: 100px;
+  font-weight: 800;
+}
+.ratings img {
+  width: 270px;
+  margin-left: 100px;
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+.header p {
+  text-align: start;
+}
+.header p {
+  font-size: 35px;
+  font-weight: 500;
+  margin-left: 100px;
+  font-weight: 800;
+}
+.location {
+  margin-left: 100px;
+  margin-bottom: 30px;
+  margin-top: 35px;
+}
+.location img {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+}
+.location p {
+  margin-left: 35px;
+}
+.paragraph {
+  width: 540px;
+  font-size: 20px;
+  margin-left: 160px;
+  margin-bottom: 50px;
+}
+.icon {
+  position: absolute;
+  margin-left: 100px;
+}
+.second-header p {
+  margin-left: 170px;
+}
+.second-header {
+  margin-top: 130px;
+  margin-bottom: 50px;
+}
+
+.price {
+  font-size: 25px;
+  font-weight: 600;
+  background-color: #0d3854;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  color: #fff;
+  padding: 10px 20px;
+  width: 150px;
+}
+.third-header {
+  margin-left: 60px;
+}
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 150px;
+}
+.text {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.arrival-logo img {
+  height: 70px;
+  width: 70px;
+}
+.arrival-logo {
+  position: absolute;
+  margin-left: 35px;
+}
+
+.arrival-images img {
+  height: 316px;
+  width: 389px;
+  margin-right: 20px;
+}
+.arrival-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 110px;
+  margin-top: 50px;
+  text-align: center;
+}
+.arrival-images p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+button {
+  padding: 20px 65px;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-bottom: 150px;
+}
+.back-button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid skyblue;
+  margin-left: 100px;
+  margin-right: 850px;
+  transition: all 0.5s ease-in-out;
+}
+.back-button:hover {
+  background-color: rgb(207, 229, 236);
+}
+.book-button {
+  background-color: #2c2c2c;
+  color: #fff;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+.back-button a {
+  text-decoration: none;
+  color: #000;
+}
+.book-button a {
+  text-decoration: none;
+  color: #fff;
+}
+.book-button:hover {
+  background-color: #3a3636;
+}
+.explore {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  display: flex;
+  background-image: url('../asset/images/footer.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.explore p {
+  font-size: 45px;
+  font-weight: 800;
+  width: 600px;
+  color: #1e4d6f;
+}
+.footer-container {
+  background-color: #003254;
+  color: #fff;
+}
+.follow_img img {
+  width: 30px;
+  height: 30px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 36px;
+  background-color: #3c95d6;
+  width: 250px;
+  height: 200px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.card-img {
+  height: 100px;
+  width: 100px;
+}
+
+.card-img img {
+  width: 100%;
+}
+.food img {
+  height: 130px;
+}
+a {
+  text-decoration: none;
+}
+.footer-container {
+  display: flex;
+}
+.contact ol {
+  display: grid;
+}
+.infos {
+  display: flex;
+}
+.infos_sub {
+  margin-right: 25px;
+}
+.socials {
+  display: flex;
+}
+.socials div {
+  margin-right: 100px;
+}
+ul li a {
+  list-style: none;
+  color: #fff;
+}
+.copyright {
+  background-color: #003254;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
