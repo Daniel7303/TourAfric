@@ -614,8 +614,10 @@ footer {
 
 @media only screen and (max-width: 570px)  {
 
-  header .header-background {
-    height: 50vh;
+
+.hero-image {
+  width: 100%;
+  height: 700px;
 
   }
   .welcome {
