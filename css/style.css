@@ -9,7 +9,7 @@ body {
     padding: 0;
     font-family: "Poppins";
   }
-  a{
+  a {
     
     text-decoration: none;
   
@@ -23,11 +23,6 @@ body {
     color: white;
   }
 
-
-  header .header-background {
-    position: absolute;
-  }
- 
 
   .navBar {
     background-color: #003254;
@@ -557,6 +552,7 @@ footer {
 
 /* content box */
 .content-box {
+  width: 80%;
   border-radius: 70px;
   padding: 1rem;
   font-size: 0.7rem;
@@ -619,7 +615,7 @@ footer {
 @media only screen and (max-width: 570px)  {
 
   header .header-background {
-    height: 400px;
+    height: 50vh;
 
   }
   .welcome {
