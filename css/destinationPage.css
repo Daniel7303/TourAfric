@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-transform: capitalize;
+  width: 100%;
+}
+/* The Header */
+header {
+  background-color: #0e3854;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.not-available {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5rem;
+  font-size: 1.5rem;
+}
+/* .logo {
+//   margin-top: 50px;
+//   margin-bottom: 30px;
+// } */
+
+header p {
+  position: relative;
+  top: -40px;
+  left: 99px;
+}
+.home-img {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  fill: wheat;
+}
+.intro{
+  padding-top: 6rem;
+}
+
+.intro h2 {
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.intro p {
+  text-align: center;
+  padding-inline: 30%;
+  margin-bottom: 7rem;
+  line-height: 1.5rem;
+}
+
+.box {
+  padding: 5rem
+}
+
+/* The search bar */
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 9rem; 
+}
+.search-input {
+  width: 100%;
+  background: #d9d9d9;
+  padding: 0.7rem;
+  border: none;
+  outline:#0e3854;
+  margin-left: 1rem;
+}
+.search-form {
+  margin: 0 auto;
+  background: #d9d9d9;
+  width: 60%;
+  padding: 1rem 1rem;
+  border-radius: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-form button {
+  cursor: pointer;
+  padding: 8px 40px 8px 40px;
+  border: none;
+  color: white;
+  background: #0e3854;
+  border-radius: 15px;
+}
+
+.search-input::placeholder {
+  padding: 20px;
+}
+
+/*  locations section */
+
+.first_loc {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.places {
+  position: relative;
+  width: 50%;
+  height: auto;
+  border-radius: 40px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 3rem;
+}
+
+.places img {
+  width: 100%;
+  height: 19rem;
+}
+
+.starRat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: green;
+  top: 0.9rem; /* Adjust top value to your preference */
+  right: 1rem; 
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+.starRat img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+.places h3 {
+  text-align: left;
+  padding: 0.5rem 2rem 0.9rem;
+  font-size: 1.4rem;
+  color: black;
+}
+.places_loc {
+  display: flex;
+  gap: 4px;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+}
+
+.places button {
+  margin: 1rem 1.2rem 1rem 2rem;
+  cursor: pointer;
+float: right;
+text-transform: capitalize;
+background: #0e3854;
+color: white;
+padding: 10px 32px;
+border: none;
+border-radius: 15px;
+}
+
+/* Footer */
+.foot_container{padding: 0 5rem;}
+
+.xplore {
+  background: url(/asset/images/footer.png) center/cover no-repeat;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.xplore h3 {
+  text-align: center;
+  font-size: 40px;
+  padding-inline: 35%;
+  color: #1F4D6F;
+}
+
+.foot_one {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #003254;
+  color: white;
+}
+
+.foot_one img {
+  width: 150px;
+  margin-top: 1rem;
+}
+.follow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+}
+.socials img {
+  width: 20px;
+  margin-top: 10px;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.infos_sub {
+  display: flex;
+  flex-direction: column;
+}
+
+.infos_sub ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.infos_sub ol a {
+  color: white;
+  text-decoration: none;
+}
+
+.infos_sub ol li {
+  list-style: none;
+}
+.line-con {
+  display: flex;
+  gap: 1.5rem;
+}
+.line {
+  height: 100px;
+  width: 3px;
+  background: #b4b7b8;
+}
+.hori-line {
+  width: 100%;
+  height: 3px;
+  background: #b4b7b8;
+  margin-top: 5px;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+/* Responsiveness */
+
+@media (max-width: 700px){
+  .box{ padding: 0 1rem;}
+
+  .intro h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 500;
+  }
+
+  .intro p{text-align: center;
+    padding-inline: 3rem;
+    margin-bottom: 7rem;
+    line-height: 1.5rem;
+}
+
+.search-form button {
+  padding: 1rem;
+}
+.search-input::placeholder {
+  padding: 0.5rem;
+}
+  .first_loc{
+      flex-wrap: wrap;
+  }
+
+  .places{
+      flex: 1 1 250px;
+  }
+  .foot_container{padding: 1rem;}
+
+  .xplore h3 {
+    font-size: 25px;
+    padding-inline: 20%;
+}
+
+}

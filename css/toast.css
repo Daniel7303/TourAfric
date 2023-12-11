@@ -1,0 +1,47 @@
+#simpleToast {
+    visibility: hidden;
+    min-width: max-content;
+    display: flex;
+    justify-content: center;
+    background-color: #7698FB;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    top: 30px; /* Adjust top positioning */
+    right: 30px; /* Position from the top right */
+    font-family: monospace;
+    line-height: 12px;
+}
+
+#simpleToast span {
+    margin-top: 2px;
+}
+
+#simpleToast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.8s, fadeout 0.8s 2.5s;
+    animation: fadein 0.8s, fadeout 0.8s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {right: 0; opacity: 0;}
+    to {right: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {right: 0; opacity: 0;}
+    to {right: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {right: 30px; opacity: 1;}
+    to {right: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {right: 30px; opacity: 1;}
+    to {right: 0; opacity: 0;}
+}
