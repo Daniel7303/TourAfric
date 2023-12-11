@@ -9,7 +9,7 @@
     border-radius: 2px;
     padding: 16px;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     top: 30px; /* Adjust top positioning */
     right: 30px; /* Position from the top right */
     font-family: monospace;

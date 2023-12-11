@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/contact.css" />
+    <!-- <link rel="stylesheet" href="/css/contact.css" /> -->
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/form.css">
+    <link rel="stylesheet" href="/css/toast.css">
     <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Poppins"
@@ -26,37 +28,41 @@
         <li class="auth"><a href="/html/signup.html">Signup</a></li> -->
       </ul>
     </nav>
-    <div class="contact-container">
-      <div class="us">
+    <div class="sign-up-container">
+      <div class="top">
         <h1>Contact Us</h1>
         <p>Fill out the form and our support management will reach you in 24 hours.</hp>
       </div>
 
-      <form action="">
+      <form action="" id="signupForm" onsubmit="event.preventDefault(); simpleToast();">
         <label for="fname">First name</label>
-        <input type="text" id="fname" name="fname" placeholder="First name" />
+        <input type="text" id="fname" name="fname" placeholder="First name" required/>
         <label for="lname">Last name</label>
-        <input type="text" id="lname" name="lname" placeholder="Last name" />
+        <input type="text" id="lname" name="lname" placeholder="Last name" required/>
         <label for="email">Email</label>
         <input
           type="email"
           id="email"
           name="email"
           placeholder="Enter your email address"
+          required
         />
         <label for="tel">Phone</label>
-        <input type="tel" id="tel" name="tel" placeholder="Enter Phone number" />
+        <input type="tel" id="tel" name="tel" placeholder="Enter Phone number" required/>
 
         <div class="check-box">
             <input type="checkbox"/>
             <label for="mycheckebox">
-                Yes, I agree to recieve more calls and emails from TourAfrik's Management 
+                Yes, I want to recieve more calls and emails from TourAfrik's Management 
             </label>
           </div>
 
           <button>SUBMIT FORM</button>
         </form>
         </div>
-   
+        <div id="simpleToast" >
+          <span>Message Successfully Sent!...</span>
+       </div>
+       <script src="/Javascript/form.js"></script>
   </body>
 </html>

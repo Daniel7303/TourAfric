@@ -3,20 +3,44 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-   height: 100vh; /* Ensure full height of the viewport */
+  min-height: 100vh;
   margin: 0;
+  position: relative; /* Make sure the position is set to relative */
+
+  /* Set the background image on the body itself */
   background-image: url("/asset/images/river.jpg");
-  background-size: cover; /* Adjust the background size property */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
 }
+
+/* Create a pseudo-element to act as an overlay with the filtered background image */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("/asset/images/river.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.5); /* Adjust the brightness value as needed */
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure the overlay is behind the content */
+}
+
 
 .sign-up-container {
   width: 600px;
   padding: 2rem;
-  margin-top: 5rem;
-  margin-bottom: 1rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   border-radius: 8px;
   backdrop-filter: blur(5px); /* Adjust the blur radius as needed */
   background: rgba(255, 255, 255, 0.5); /* Adjust the background color and alpha as needed */
@@ -33,6 +57,8 @@ body {
 .top {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
   align-items: center;
 }
 
@@ -72,12 +98,20 @@ input {
   flex-direction: column;
   position: relative;
 }
-.eye-icon {
+.toggle-password {
   position: absolute;
-  right: 2%;
-  top: 50%;
-  transform: translateY(-30%);
+  top: 60%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
+
+// .eye-icon {
+//   position: absolute;
+//   right: 2%;
+//   top: 50%;
+//   transform: translateY(-30%);
+// }
 
 button {
   margin-top: 1.8rem;
@@ -94,7 +128,7 @@ button {
 /* style the checkbox */
 .check-box {
   display: flex;
-  font: small;
+  font: 1rem;
   justify-content: start;
   align-items: center;
   gap: 0.3rem;
@@ -146,3 +180,6 @@ hr {
   text-decoration: none;
   color: blue;
 }
+
+
+

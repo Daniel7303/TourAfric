@@ -1,3 +1,21 @@
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #001c2e;
+  margin-left: 10px; /* Set your preferred color */
+
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Set the background color to transparent */
+  
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -32,13 +50,15 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 99;
 }
 
 .logo img {
   display: block;
 }
-
+.navBar img{
+  width: 150px;
+}
 .navBar ul {
   list-style-type: none;
   display: flex;
