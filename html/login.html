@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/signup.css" />
+    <link rel="stylesheet" href="/css/form.css" />
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poppins"
@@ -15,7 +17,7 @@
   <body>
     <nav class="navBar">
       <a class="logo" href="/index.html">
-        <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="" width="150px" />
+        <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="logo"  />
       
       </a>
       <ul >
@@ -55,11 +57,16 @@
             name="password"
             placeholder="Enter your password" required
           />
-          <span class="eye-icon">&#128065</span>
+          <i class="toggle-password fas fa-eye" onclick="togglePasswordVisibility()"></i>
+      
         </div>
+        <!-- <div class="password-container">
+          <input type="password" id="passwordInput" placeholder="Enter Password">
+         
+        </div> -->
 
         <div class="check-box">
-          <input type="checkbox" required/>
+          <input type="checkbox" />
           <label for="mycheckebox">
               Remember me
           </label>
@@ -81,9 +88,9 @@
           <img src="/asset/icons/Frame 62.svg" alt="Twitter">
         </div>
     </div>
-    <div id="simpleToast">
+    <div id="simpleToast" >
        <span>Login Successful!...</span>
     </div>
-    <script src="/Javascript/signup.js"></script>
+    <script src="/Javascript/form.js"></script>
   </body>
 </html>
