@@ -19,7 +19,7 @@
     transform: rotate(0.004deg);
     flex-shrink: 0;
     position: relative;
-    margin-bottom: 15rem;
+    margin-bottom: 9rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -32,7 +32,7 @@
          transform: rotate(0.004deg);
          flex-shrink: 0;
          position: relative;
-         margin-bottom: 8rem;
+         margin-bottom: 4rem;
          display: flex;
          flex-direction: column;
     }
@@ -389,7 +389,6 @@ flex-shrink: 0;
 border-radius: 0.625rem;
 background: #003254;
 color: #fff;
-margin-top: 1.75rem;
 }
 @media only screen and (max-width: 600px) {
     .searchBtn{
@@ -404,13 +403,13 @@ margin-top: 1.75rem;
        background: #003254;
        color: #fff;
        border: none;
-       margin-top: 1.5rem;
+       margin-top: 0.8rem;
        }
    
        }
 
 .cheapAirlines{
- margin-top: 10rem;
+ margin-top: 5rem;
 width: 70%;
 flex-shrink: 0;
 display: flex;
