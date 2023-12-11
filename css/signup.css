@@ -3,18 +3,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  // height: 100vh; /* Ensure full height of the viewport */
+   height: 100vh; /* Ensure full height of the viewport */
   margin: 0;
   background-image: url("/asset/images/river.jpg");
   background-size: cover; /* Adjust the background size property */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
+  width: 100%;
 }
 
 .sign-up-container {
-  min-width: 600px;
+  width: 600px;
   padding: 2rem;
-  margin-top: 8rem;
+  margin-top: 5rem;
   margin-bottom: 1rem;
   border-radius: 8px;
   backdrop-filter: blur(5px); /* Adjust the blur radius as needed */
@@ -24,9 +25,9 @@ body {
 .home-img {
   height: 2rem;
   width: 2rem;
-  // position: absolute;
+/*   // position: absolute;
   // top: 1rem;
-  // right: 1rem;
+  // right: 1rem; */
 }
 
 .top {
@@ -45,7 +46,7 @@ body {
 }
 
 h2 {
-  // margin-top: -2px;
+  /* // margin-top: -2px; */
   font-weight: 400;
 }
 
