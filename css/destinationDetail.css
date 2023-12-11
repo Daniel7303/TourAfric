@@ -13,7 +13,7 @@ body {
 }
 .hero {
   width: 1200px;
-  height: 600px;
+  height: 700px;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -106,6 +106,7 @@ header {
   text-align: center;
   margin-bottom: 150px;
 }
+
 .text {
   justify-content: center;
   align-items: center;
@@ -157,6 +158,7 @@ button {
 }
 .back-button:hover {
   background-color: rgb(207, 229, 236);
+  color: rgb(98, 137, 168);
 }
 .book-button {
   background-color: #2c2c2c;
@@ -173,7 +175,11 @@ button {
   color: #fff;
 }
 .book-button:hover {
-  background-color: #3a3636;
+  background-color: rgb(73, 66, 66);
+  color: rgb(190, 189, 189);
+}
+button:hover {
+  cursor: pointer;
 }
 .explore {
   justify-content: center;
@@ -183,8 +189,9 @@ button {
   text-align: center;
   display: flex;
   background-image: url('../asset/images/footer.png');
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .explore p {
   font-size: 45px;
@@ -195,10 +202,11 @@ button {
 .footer-container {
   background-color: #003254;
   color: #fff;
+  padding-left: 80px;
 }
 .follow_img img {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 .card {
@@ -224,14 +232,40 @@ button {
 .food img {
   height: 130px;
 }
+img.food {
+  padding-bottom: 30px;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  font-size: 12px;
+}
 a {
   text-decoration: none;
+  color: #fff;
 }
 .footer-container {
   display: flex;
 }
-.contact ol {
+.footer-container p {
+  font-size: 16px;
+}
+.footer-logo {
+  background-color: #003254;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-left: 80px;
+}
+.contact div {
   display: grid;
+  margin-top: 8;
+}
+.contact a {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 12px;
+  margin-top: 6px;
 }
 .infos {
   display: flex;
@@ -245,9 +279,33 @@ a {
 .socials div {
   margin-right: 100px;
 }
+.line {
+  height: 1px;
+  width: 60px;
+  background-color: #fff;
+}
+.lines {
+  width: 1px;
+  height: 59px;
+  background-color: #fff;
+  position: absolute;
+}
+.icons {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 ul li a {
   list-style: none;
   color: #fff;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+ul {
+  margin-top: 8px;
+}
+a:hover {
+  color: blue;
+  cursor: pointer;
 }
 .copyright {
   background-color: #003254;
@@ -255,4 +313,74 @@ ul li a {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding-top: 40px;
+  font-size: 12px;
+  padding-bottom: 12px;
+}
+.terms {
+  margin-right: 20px;
+  font-size: 14px;
+}
+.footer-container {
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  header {
+    font-size: 45px;
+  }
+  .hero {
+    width: 720px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-image {
+    width: 100%;
+    height: 100%;
+  }
+  .sub-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    margin-left: 55px;
+  }
+  .sub-images img {
+    margin-bottom: 30px;
+    align-self: center;
+  }
+  .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 50px;
+    width: 700px;
+  }
+  .images img {
+    margin-top: 30px;
+  }
+  .text {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 65px;
+    margin-bottom: 30px;
+  }
+  .arrival-images {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .arrival-images img {
+    width: 600px;
+    height: 400px;
+    margin-left: 25px;
+  }
+  .arrival-images p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .back-button {
+    margin-right: 210px;
+  }
+  .socials div {
+    margin-right: 30px;
+  }
 }
