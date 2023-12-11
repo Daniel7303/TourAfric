@@ -1,0 +1,455 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:ital,wght@0,300;0,600;0,700;0,900;1,400;1,500;1,600;1,800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.flightDetailsContainer{
+ width: 100%;
+ height: 100vh;
+ position: relative;
+
+
+}
+
+.flightDetailsContainerImg{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+@media only screen and (max-width: 600px) {
+    .flightDetailsContainerImg {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+    }
+  }
+.detailsContainer{
+   width: 100%;
+   padding:2rem 5rem 10rem 5rem;
+   background-color: antiquewhite;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 2rem;
+   position: absolute;
+   top: 18rem;
+}
+@media only screen and (max-width: 600px) {
+    .detailsContainer {
+        width: 100%;
+   padding:1rem 2rem 5rem 2rem;
+   background-color: antiquewhite;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   position: absolute;
+   top: 115px;
+    }
+  }
+.upperContainer{
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 4rem;
+   justify-content: center;
+
+}
+.terminal{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.terminals{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+    .terminals h1   {
+        font-weight: 700;
+        font-size: 15px;
+    }
+  }
+
+.terminals h2 {
+    font-weight: 300;
+    font-size: 1.23rem;
+}
+@media only screen and (max-width: 600px) {
+    .terminals h2   {
+        font-weight: 300;
+        font-size: 12px;
+    }
+  }
+.terminals p{
+    font-weight: 100;
+    font-size: 0.6rem;
+} 
+@media only screen and (max-width: 600px) {
+    .terminals p   {
+        font-weight: 200;
+        font-size: 8px;
+    }
+  }
+.terminalx {
+    text-align: center;
+}
+
+.doted {
+    display: inline-block;
+    color: #000;
+    font-family: Poppins;
+    font-size: 39.633px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0 0.625rem; 
+}
+@media only screen and (max-width: 600px) {
+    .doted  {
+        display: inline-block;
+    color: #000;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    margin: 0 0.225rem; 
+    }
+  }
+.planeIcon {
+    vertical-align: middle;
+    width: 1.875rem;
+    height: 1.875rem;
+    object-fit: contain;
+}
+@media only screen and (max-width: 600px) {
+    .planeIcon  {
+     vertical-align: middle;
+    width: 1.275rem;
+    height: 1.275rem;
+    object-fit: contain;
+    }
+  }
+hr{
+color : lightgrey;
+font-size: 0.3rem;
+ width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+    hr {
+        color : lightgrey;
+        font-size: 0.1rem;
+         width: 80%;
+    }
+  }
+.detailsTime{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.time h4{
+color: #000;
+font-family: Poppins;
+font-size: 1.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.4rem; 
+}
+
+@media only screen and (max-width: 600px) {
+    .time h4 {
+        color: #000;
+font-family: Poppins;
+font-size: 0.85rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1rem; 
+}
+    }
+  
+
+.time h3{
+color: rgba(0, 0, 0, 0.72);
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.35rem; /* 22.4px */
+}
+.detailTime{
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+.detailTime img{
+width: 7.125rem;
+height: 10.25rem;
+flex-shrink: 0;
+}
+@media only screen and (max-width: 600px) {
+ .detailTime img {
+    width: 30px;
+    height: 40px;
+    flex-shrink: 0;
+}
+    }
+.detailTime p {
+    color: rgba(0, 0, 0, 0.72);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.35rem; /* 22.4px */
+    
+}
+@media only screen and (max-width: 600px) {
+    .detailTime p {
+     color: #000;
+    font-family: Poppins;
+    font-size: 0.65rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0.5rem;
+   }
+       }
+.detailTime h4{
+ color: #000;
+font-family: Poppins;
+font-size: 1.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.41rem; /* 39.2px */
+}
+@media only screen and (max-width: 600px) {
+    .detailTime h4 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 0.65rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.21rem;
+   }
+       }
+hr{
+    width: 75rem;
+    height: 0.25rem;
+    flex-shrink: 0;
+    background: var(--isaac-8, #D9D9D9);
+}
+.lowerContainer{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 4rem;
+   justify-self: flex-start;
+   margin-bottom: 3rem;
+}
+@media only screen and (max-width: 600px) {
+    .lowerContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        justify-self: flex-start;
+        margin-bottom: 1rem;
+   }
+       }
+.top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem 10rem;
+    gap: 2rem;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+    .top {
+     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.55rem 4rem;
+    gap: 2rem;
+    justify-content: space-between;
+   }
+       }
+.passengers{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.fpassenger{
+    color: rgba(0, 0, 0, 0.72);
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.75rem; 
+}
+
+@media only screen and (max-width: 600px) {
+    .fpassenger {
+        color: rgba(0, 0, 0, 0.72);
+        font-family: Poppins;
+        font-size: 0.55rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 0.75rem; 
+   }}
+.fname{
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.43rem; /* 39.2px */
+}
+@media only screen and (max-width: 600px) {
+    .fname {
+     color: #000;
+    font-family: Poppins;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.43rem; 
+   }}
+.ticketNumber{
+    font-weight: 300;
+    font-size: 1.23rem;
+} 
+@media only screen and (max-width: 600px) {
+    .ticketNumber {
+    font-size: 10px;
+   }}
+
+.tflight{
+ font-weight: 300;
+ color: rgba(0, 0, 0, 0.72);
+font-family: Poppins;
+font-size: 1.25;
+font-style: normal;
+font-weight: 500;
+line-height: 1.75rem; 
+}
+@media only screen and (max-width: 600px) {
+    .tflight {
+        font-weight: 300;
+        color: rgba(0, 0, 0, 0.72);
+       font-family: Poppins;
+       font-size: 0.55;
+       font-style: normal;
+       font-weight: 500;
+       line-height: 0.75rem; 
+   }}
+.fticket{
+ color: #000;
+font-family: Poppins;
+font-size: 1.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.45rem; /* 39.2px */
+}
+@media only screen and (max-width: 600px) {
+    .fticket {
+        color: #000;
+font-family: Poppins;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.15rem; 
+   }}
+.flight{
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.place{
+ text-align: left;
+}
+.place .t{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.place :last-child{
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.place :first-child{
+    font-size: 0.65rem;
+}
+.place h3{
+ color: rgba(0, 0, 0, 0.72);
+font-family: Poppins;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.75rem;
+}
+.place h4{
+color: #000;
+font-family: Poppins;
+font-size: 1.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.4rem; 
+}
+.prices{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.price{
+      font-weight: 500;
+    font-size: 0.9rem;
+}
+.price :first-child{
+    font-size: 0.65rem;
+}
+.fprice{
+    color: #003580df;
+    font-weight: 700;
+}
+.prices button {
+    width: 12.25rem;
+    height: 3.5625rem;
+    padding: 0.625;
+    border-radius: 1.25rem;
+    background: #003254;
+    gap: 0.625rem;
+    color: white;
+    flex-shrink: 0;
+    border: none;
+}
+@media only screen and (max-width: 600px) {
+.prices button {
+    width: 5.25rem;
+    height: 1.5625rem;
+    padding: 0.325;
+    border-radius: 0.45rem;
+    background: #003254;
+    color: white;
+    flex-shrink: 0;
+    border: none;
+   }}
