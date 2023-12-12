@@ -8,7 +8,9 @@
     font-family: 'Poppins';
     transition: 100ms ease-in-out;
 }
-
+a {
+    text-decoration: none;
+}
 
 .wrapper {
     display: flex;
@@ -30,7 +32,7 @@
 .itineHeader h1 {
     color: #003253;
     text-transform: capitalize;
-    font-size: clamp(1.2em,1.5vw, 1.5em);
+    font-size: clamp(1.3em,1.8vw, 1.8em);
 }
 .itineBox {
     display: grid;
@@ -153,7 +155,7 @@
 .flightWrapper h3 {
     color: #003253;
     text-transform: capitalize;
-    font-size: clamp(1.2em,1.5vw, 1.5em);
+    font-size: clamp(1.3em,1.8vw, 1.8em);
 }
 .flightGrid {
     border-bottom: 2px solid #a9a9a9;
@@ -169,7 +171,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.4em;
-    font-size: clamp(1em, 1.2vw,1.3em);
+    font-size: clamp(1em, 1.1vw,1.3em);
 }
 .flightBox p:nth-child(1) {
     font-weight: 600;
@@ -184,7 +186,7 @@
 table {
     border-collapse: collapse;
     width: 100%;
-    font-size: clamp(1em, 1.2vw,1.3em);
+    font-size: clamp(1em, 1.1vw,1.3em);
 }
 th {
     border: 2px solid #a9a9a9;
@@ -199,4 +201,35 @@ td {
 }
 td:nth-child(6) {
     font-weight: 600;
+}
+.flightLink {
+    padding-bottom: 0.8em;
+    margin-top: 1em;
+    border-bottom: 1px solid #a9a9a9;
+}
+.flightLink a {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    font-size: clamp(1.1em, 1.3vw,1.3em);
+    font-weight: 600;
+    color: #3C95D6;
+}
+.flightLink a:hover {
+    color: #003253;
+}
+.flightTotalWrapper {
+    display: flex;
+    justify-content: end;
+    padding: 1em 2em 2em 1em;
+}
+.flightTotal {
+    display: flex;
+    gap: 1.5em;
+    font-size: clamp(1.1em, 1.3vw,1.3em);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.flightTotal p:nth-child(2) {
+    text-transform: uppercase;
 }
