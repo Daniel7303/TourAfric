@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Define the grid container */
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Default to one column for mobile */
+  gap: 1rem;
+
+  position: relative;
+}
+
+/* Add this CSS to your existing styles or create a new stylesheet */
+/* Style the date input */
+input[type="date"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%; /* Make it 100% width */
+  }
+  
+  /* Style the calendar icon */
+  input[type="date"]::after {
+    content: '\1F4C5'; /* Unicode character for calendar icon */
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  /* Style the input on focus */
+  input[type="date"]:focus {
+    outline: none;
+    border-color: #3498db; /* Change border color on focus */
+  }
+  
+  /* Increase the size of radio buttons */
+input[type="radio"] {
+  transform: scale(1.5); /* Adjust the scaling factor as needed */
+  margin-right: 5px; /* Optional: Add some spacing between the radio button and label */
+}
+
+/* Optional: Style the label associated with the radio button */
+label[for="oneway"], label[for="roundTrip"] {
+  font-size: 16px; /* Adjust the font size as needed */
+  /* Add any other styling properties as needed */
+}
+
+/* Style the select container */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+  }
+  
+  /* Style the arrow icon */
+  select::after {
+    content: '\25BC'; /* Unicode character for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  /* Style the options */
+  select option {
+    background-color: #fff;
+    color: #333;
+  }
+  
+.flight-deals
+  > div
+  > div
+  > a
+  > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  position: absolute;
+  padding-left: 1rem;
+  padding: 1rem 0rem 1rem 2rem;
+  color: white;
+}
+.flight-deals>div{
+    margin-bottom:7rem;
+}
+
+
+
+.hero {
+  margin-bottom: 15rem;
+}
+.hero > div:nth-child(1) {
+  background-color: #003254;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
+  color: white;
+  padding-bottom: 8rem;
+  gap: 1rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 16rem;
+  left: 3.5rem;
+  padding-bottom: 8rem;
+  gap: 1rem;
+}
+form > div:nth-child(1) {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  background-color: #d9d9d9;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+form > div:nth-child(1) > div:nth-child(1) {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+form > div:nth-child(1) > div:nth-child(2) {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 4rem;
+}
+form > div:nth-child(1) > div:nth-child(2) input {
+  height: 2rem;
+}
+form button {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: transparent;
+  background-color: #003254;
+  color: white;
+}
+
+.flight-deals {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.flight-deals h2 {
+  font-weight: 100;
+  font-size: medium;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+/* Responsive layout adjustments */
+@media (min-width: 600px) {
+  /* Two columns for tablets */
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  /* Three columns for desktop */
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Style for the images */
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
