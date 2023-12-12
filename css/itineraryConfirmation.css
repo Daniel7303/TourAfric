@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
+    font-family: 'Poppins';
+    transition: 100ms ease-in-out;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 2em;
+}
+
+
+.itineHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.itineDate {
+    color: #0E3854;
+    font-size: clamp(0.8em,1vw,1em);
+}
+.itineHeader h1 {
+    color: #0E3854;
+    text-transform: capitalize;
+    font-size: clamp(1.2em,1.5vw, 1.5em);
+}
+.itineBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 5px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+    border-left: 5px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    gap: 1em;
+    padding: 0.6em 1em 0.3em 1em;
+    border-radius: 8px;
+}
+.itineBox a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    text-decoration: none;
+    padding-right: 0.8em;
+    color: #3C95D6;
+}
+.itineBox a:hover {
+    color: #0E3854;
+}
+.itineBox a p {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: clamp(1em, 1.3vw, 1.3em) !important;
+}
+.itineBox a i {
+    font-size: clamp(1.2em,1.5vw, 1.5em);
+}
+.itineBox p {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: clamp(1.2em,1.5vw, 1.5em);
+}
+.itineBox p:nth-child(2) {
+    text-transform: uppercase;
+}
+
+
+.travelWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.travelWrapper h2 {
+    color: #a9a9a9;
+    text-transform: capitalize;
+    font-size: clamp(1.2em,1.5vw, 1.5em);
+}
+.travelGridHead {
+    display: flex;
+    width: 100%;
+    border-top: 2px solid #a9a9a9;
+    border-bottom: 2px solid #a9a9a9;
+}
+.travelGridHead p {
+    color: #3C95D6;
+    font-weight: 700;
+    font-size: clamp(1em, 1.2vw,1.3em);
+    padding: 0.6em 2em;
+    text-transform: capitalize;
+}
+.travelGrid {
+    display: grid;
+    gap: 1em;
+    padding: 0.6em 2em;
+    grid-template-columns: 30% 40%;
+    border-bottom: 2px solid #a9a9a9;
+}
+.travelGridBox {
+    display: flex;
+    flex-direction: column;
+    grid-area: 1em;
+}
+.travelGroup {
+    display: flex;
+    justify-content: space-between;
+}
