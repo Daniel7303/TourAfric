@@ -1,0 +1,54 @@
+.img-book img {
+  width: 100%;
+  height: 50vh;
+}
+.detail-hero {
+  margin-top: 10rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+.from-to {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.from-to-pass,
+.from-to-details,
+.from-to-price,
+.from-to-time {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.from-to-time > div:nth-child(1){
+  display: flex;
+  align-items: center;
+}
+.from-to-time > div:nth-child(1) > h5{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.from-to-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin: 3rem 0 3rem 0;
+}
+.from-to-main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 3rem 0 6rem 0;
+}
+.from-to-price button {
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  background-color: #003254;
+  color: white;
+}
