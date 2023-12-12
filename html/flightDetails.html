@@ -1,90 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/flightDetails.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="../asset/icons/aeroplane.svg">
-    <title>TourAfrik</title>
-</head>
-<body>
-    <div class="flightDetailsContainer">
-        <img class="flightDetailsContainerImg" src="/asset/images/airline logo - Copy.png" alt="backgrounImage">
-        <div class="detailsContainer">
-           <div class="upperContainer">
-               <div class="terminal">
-                   <div class="terminals">
-                       <h1 class="country">America</h1>
-                       <h2 class="state">New York</h2>
-                       <p>John F.Kennedy AirPort</p>
-                   </div>
-                   <div class="terminalx">
-                      <span class="doted">........</span>
-                      <img class="planeIcon" src="../asset/icons/aeroplane.svg" alt="">
-                      <span class="doted">........</span>
-                   </div>
-                   <div class="terminals">
-                       <h1 class="country">Kenya</h1>
-                       <h2 class="state">Mambase Island</h2>
-                       <p>Mambase intl. AirPort</p>
-                   </div>
-               </div>
-               <div class="detailsTime">
-               <div class="time">
-                <img src="" alt="">
-                <div class="detailTime">
-                    <img src="../asset/images/airline logo - Copy.png" alt="">
-                   <div class="airline1">
-                    <p >American AirLines</p>
-                    <h4>7:00 - 10:45</h4>
-                   </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/flightDetails2.css" type="text/css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navBar">
+        <a class="logo" href="/index.html">
+          <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="logo" />
+        </a>
+        <ul>
+          <!-- <li><a href="">Home</a></li> -->
+          <li>
+            <a href="/html/destinationPage.html">Destination</a>
+          </li>
+          <li><a href="/html/aboutUs.html">About us</a></li>
+          <li id="contactLink">
+            <a href="/html/contact.html">Contact us</a>
+          </li>
+          <li id="loginLink">
+            <a href="/html/login.html">Login</a>
+          </li>
+          <li id="signupLink">
+            <a href="/html/signup.html">Signup</a>
+          </li>
+          <li>
+            <img
+              id="imgLink"
+              class="li-Img"
+              src="/asset/images/face.jpg"
+              alt=""
+            />
+          </li>
+        </ul>
+      </nav>
+      <!-- <div class="img-book">
+    <img src="/asset/images/image 17.png" alt="">
+</div> -->
+      <div class="detail-hero">
+        <div class="from-to-hero">
+          <div class="from-to">
+            <div>
+              <h1 class="from-place"></h1>
+
+              <p class="random-airport-from"></p>
+            </div>
+            <div>
+              ..............<i class="fas fa-plane-arrival"></i>...............
+            </div>
+            <div>
+              <h1 class="to-place"></h1>
+
+              <p class="random-airport-to"></p>
+            </div>
+          </div>
+          <div class="from-to-time">
+            <div>
+              <img src="/asset/images/airline logo.png" width="50px" alt="" />
+              <h5 id="airlineName" class="airline-name">
+                American Airlines
+                <div>
+                  <span class="random-time random-time-1"></span>-
+                  <span class="random-time random-time-2"></span>
                 </div>
-               </div>
-               <div class="time">
-                  <h4>3hr 45m</h4>
-                  <h3>Non-Stop</h3>
-               </div>
-           </div>
+              </h5>
+            </div>
+
+            <div>
+              <h5 class="random-duration" id="flightDuration">3hr</h5>
+              <p>Non-stop</p>
+            </div>
+          </div>
         </div>
-           <hr>
-           <div class="lowerContainer">
-                <div class="top">
-                    <div class="passengers">
-                        <div class="passenger">
-                            <h3 class="fpassenger">PASSENGER</h3>
-                            <h4 class="fname">Sandeep Kumar</h4>
-                        </div>
-                        <div class="ticketNumber">
-                             <h2 class="tflight">FLIGHT</h2>
-                             <h4 class="fticket">VX221</h4>
-                        </div>
-                    </div>
-                    <div class="flight">
-                        <div class="place t">
-                            <h3>TERMINAL</h3>
-                            <h3>10</h3>
-                        </div>
-                        <div class="place">
-                            <h3>SEAT</h3>
-                            <h4>17 A</h4>
-                        </div>
-                        <div class="place">
-                            <h3>CLASS</h3>
-                            <h4>Economy</h4>
-                        </div>
-                    </div>
-                    <div class="prices">
-                        <div class="price">
-                            <h3>PRICE</h3>
-                            <span class="fprice">$232.24 USD</span>
-                        </div>
-                        <button>BOOK</button>
-                    </div>
-                </div>
-           </div>
+        <hr />
+        <div class="from-to-main">
+          <div class="from-to-pass">
+            <div>
+              <h3>PASSENGER</h3>
+              <p class="passName">Ada</p>
+            </div>
+            <div>
+              <h3>FLIGHT</h3>
+              <p class="random-number">23456</p>
+            </div>
+          </div>
+          <div class="from-to-details">
+            <div>
+              <h3>TERMINAL</h3>
+              <p class="random-digit">10</p>
+            </div>
+            <div>
+              <h3>SEAT</h3>
+              <p class="random-alpha">17 A</p>
+            </div>
+            <div>
+              <h3>CLASS</h3>
+              <p class="flight-plan">Economy</p>
+            </div>
+          </div>
+          <div class="from-to-price">
+            <div>
+              <h3>PRICE</h3>
+              <p>
+                <i class="fas fa-dollar-sign"></i
+                ><span class="price" id="flightPrice"></span>USD
+              </p>
+            </div>
+            <div>
+              <button onclick="storeFormData()" type="submit">BOOK</button>
+            </div>
+          </div>
         </div>
-        
+      </div>
     </div>
-    
-</body>
+    <footer>
+      <div class="footer">
+        <h3>Explore the beauty around you today!</h3>
+      </div>
+
+      <section class="foot_one">
+        <div class="container">
+          <img class="flogo" src="/asset/logo/TOUR AFRIK 2 1.png" alt="" />
+          <div class="follow">
+            <div class="socials">
+              <p>follow us:</p>
+              <div class="follow_img">
+                <img src="/asset/icons/facebook icon.svg" alt="" />
+                <img src="/asset/icons/X icon.svg" alt="" />
+                <img src="/asset/icons/instagram icon.svg" alt="" />
+                <img src="/asset/icons/linkedin icon.svg" alt="" />
+              </div>
+            </div>
+            <div class="infos">
+              <div class="infos_sub">
+                <p>Company</p>
+                <div class="line-con">
+                  <div class="line"></div>
+                  <ol>
+                    <a href="about.html">About Us</a>
+                    <a href="">Our Services</a>
+                    <a href="">Career</a>
+                  </ol>
+                </div>
+              </div>
+              <div class="infos_sub">
+                <p>Contact</p>
+                <div class="line-con">
+                  <div class="line"></div>
+                  <ol>
+                    <a href="tel:+2341234567890">+234 123 456 7890</a>
+                    <a href="mailto:info@tourafrik.com">info@tourafrik.com</a>
+                    <a href="mailto:book@tourafrik.com">book@tourafrik.com</a>
+                  </ol>
+                </div>
+              </div>
+              <div class="infos_sub">
+                <p>Resources</p>
+                <div class="line-con">
+                  <div class="line"></div>
+                  <ol>
+                    <li>Travel</li>
+                    <a href="">Destination</a>
+                    <li>review</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hori-line"></div>
+          <div class="copyright">
+            <p>
+              Copyright &copy; 2023 Genesys Upskill Group 5 All rights reserved.
+            </p>
+            <p>Terms of Services</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="/Javascript/script.js"></script>
+    <script src="/Javascript/flightDetails.js"></script>
+  </body>
 </html>
