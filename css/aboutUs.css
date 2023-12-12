@@ -54,7 +54,6 @@ header{
     margin-bottom: 5rem;
     font-weight: 400;
     font-size: 1.3rem;
-    align-items: center;
     padding-top: 2rem;
     
     
@@ -134,3 +133,12 @@ header{
     justify-content: space-between;
     margin-bottom: 2px;
 }
+
+@media (max-width: 700px){
+.about p {
+    padding-inline: 5%;
+}
+
+
+}
+  
