@@ -100,7 +100,7 @@
 .travelGrid {
     display: grid;
     gap: 1em;
-    padding: 0.6em 2em;
+    padding: 0.6em 2em 1em 2em;
     grid-template-columns: 30% 40%;
     border-bottom: 2px solid #a9a9a9;
 }
@@ -108,8 +108,30 @@
     display: flex;
     flex-direction: column;
     grid-area: 1em;
+    gap: 1.5em;
+    color: #3C95D6 !important;
+    text-transform: capitalize;
+    font-weight: 500;
 }
 .travelGroup {
     display: flex;
     justify-content: space-between;
+}
+.travelInner {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1em;
+}
+.travelInnerGroup {
+    display: flex;
+    gap: 0.3em;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.travelInnerGroup p {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: clamp(1em, 1.2vw,1.3em);
 }
