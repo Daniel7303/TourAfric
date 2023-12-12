@@ -190,7 +190,7 @@ main {
 }
 
 /* Adding more styles as needed for other elements */
-/* cards */
+/* style for cards */
 .card-section {
   display: flex;
   gap: 20px;
