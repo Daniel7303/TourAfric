@@ -263,7 +263,7 @@ a {
   margin-top: 8px;
 }
 .contact a {
-  color: #fff;
+  color: #d4cfcf;
   margin-left: 10px;
   font-size: 12px;
   margin-top: 6px;
@@ -291,7 +291,7 @@ a {
 }
 ul li a {
   list-style: none;
-  color: #fff;
+  color: #d4cfcf;
   margin-left: 10px;
   margin-bottom: 20px;
 }
@@ -299,7 +299,7 @@ ul {
   margin-top: 8px;
 }
 a:hover {
-  color: blue;
+  color: #fff;
   cursor: pointer;
 }
 .copyright {
@@ -400,7 +400,7 @@ a:hover {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
-    margin-left: 24px;
+    margin-left: 13px;
     margin-right: 0px;
     justify-content: center;
   }
@@ -452,7 +452,8 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 120px;
-    width: 400px;
+    width: 180px;
+    padding-left: 180px;
   }
   .text {
     font-weight: 300;
@@ -472,6 +473,7 @@ a:hover {
   }
   .third-header p {
     text-align: center;
+    margin-left: 40px;
   }
 
   .arrival-images {
@@ -483,7 +485,7 @@ a:hover {
     height: auto;
     width: 100%;
     margin-right: 0px;
-    margin-left: 24px;
+    margin-left: 15px;
   }
   .arrival-images p {
     font-size: 16px;
@@ -570,5 +572,90 @@ a:hover {
   }
   .lines {
     height: 60px;
+  }
+}
+@media (max-width: 320px) {
+  .sub-images {
+    width: 250px;
+  }
+  .sub-images img {
+    margin-left: 35px;
+  }
+  .ratings img {
+    margin-left: 60px;
+  }
+  .location {
+    margin-left: 10px;
+  }
+  .location img {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .location p {
+    margin-left: 28px;
+  }
+  .paragraph {
+    margin-left: 20px;
+  }
+  .paragraph p {
+    width: 260px;
+  }
+  .images {
+    width: 40px;
+    margin: 0;
+    padding-left: 160px;
+  }
+  .text {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .arrival-images {
+    width: 250px;
+  }
+  .arrival-images img {
+    margin-left: 35px;
+  }
+  .arrival-images p {
+    margin-left: 30px;
+  }
+  button {
+    padding: 10px 35px;
+  }
+  .back-button {
+    margin-right: 88px;
+    margin-left: 18px;
+    font-size: 11px;
+  }
+  .book-button {
+    font-size: 11px;
+  }
+  a {
+    width: 100%;
+  }
+
+  .infos_sub {
+    margin-right: 5px;
+  }
+
+  .socials div {
+    margin-right: 5px;
+  }
+
+  .copyright {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding-top: 20px;
+    font-size: 9px;
+    padding-bottom: 5px;
+    gap: 60px;
+  }
+  .terms {
+    position: relative;
+    font-size: 9px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    width: 100%;
   }
 }
