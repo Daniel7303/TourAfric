@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/payment.css" type="text/css" />
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,10 +16,33 @@
 
   <body>
     <header>
-      <div class="logo">
-        <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="" />
+      <!-- <div class="logo">
+        <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="" width="200px"/>
         <p>Explore the beauty around the world!</p>
-      </div>
+      </div> -->
+      <nav class="navBar">
+        <a class="logo" href="/index.html">
+          <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="logo"  />
+        
+        </a>
+       <!--  <ul>
+           <li><a href="">Home</a></li> 
+          <li >
+            <a href="/html/destinationPage.html">Destination</a>
+          </li>
+          <li><a href="/html/aboutUs.html">About us</a></li>
+          <li id="contactLink">
+            <a href="/html/contact.html">Contact us</a>
+          </li>
+          <li id="loginLink">
+            <a href="/html/login.html"></a>
+          </li>
+          <li id="signupLink">
+            <a href="/html/signup.html"></a>
+          </li>
+          <li><img id="imgLink" class="li-Img" src="/asset/images/face.jpg" alt="" /></li>
+        </ul> -->
+      </nav>
     </header>
 
     <section class="payment-cont">
@@ -33,22 +57,34 @@
         <img src="/asset/icons/paypal.svg" alt="" />
       </div>
 
+      <!-- too much containers -->
+      
       <div class="card-payments">
         <div class="card-number">
           <form action="">
             <label for="card number">Card Number</label>
 
             <div class="span-type">
-            <span><img src="/asset/icons/calendar.svg" alt="" /></span>
-            <input type="card number" id="card-number" name="card number" />
-          </div>
+              <span><img src="/asset/icons/calendar.svg" alt="" /></span>
+              <input
+                type="card number"
+                id="card-number"
+                name="card number"
+                required
+              />
+            </div>
           </form>
         </div>
 
         <div class="expiry">
           <form action="">
             <label for="expiry date">Expiry Date</label>
-            <input type="expiry date" id="expiry-date" name="expiry date" />
+            <input
+              type="expiry date"
+              id="expiry-date"
+              name="expiry date"
+              required
+            />
           </form>
         </div>
       </div>
@@ -61,6 +97,7 @@
               type="candidate name"
               id="candidate-name"
               name="candidate name"
+              required
             />
           </form>
         </div>
@@ -68,22 +105,23 @@
         <div class="cvv">
           <form action="">
             <label for="cvv">CVV</label>
-            <input type="cvv" id="cvv" name="cvv" />
+            <input type="cvv" id="cvv" name="cvv" required />
           </form>
         </div>
       </div>
 
       <div class="checkbox">
         <div class="check">
-        <input type="checkbox" />
-        <label for="mycheckebox"> I accept the Terms & Condition </label>
+          <input type="checkbox" required />
+          <label for="mycheckebox"> I accept the Terms & Condition </label>
         </div>
-        <button type="pay">Pay</button>
+       
       </div>
+      <button type="pay">Pay</button>
     </section>
 
-       <!--The Footer-->
-       <footer>
+    <!--The Footer-->
+    <!--  <footer>
         <div class="xplore">
           <h3>Explore the beauty around you today!</h3>
         </div>
@@ -147,8 +185,7 @@
             </div>
           </div>
         </section>
-      </footer>
-      <script src="/Javascript/destinationPage.js"></script>
-    </body>
-  </html>
-  
+      </footer> -->
+    <script src="/Javascript/destinationPage.js"></script>
+  </body>
+</html>
