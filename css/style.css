@@ -85,6 +85,22 @@ header {
   background-color: white;
   margin: 3px 0;
 }
+.li-Img {
+  position: relative;
+  width: 45px;
+  height: 45px;
+border-radius: 50%;
+}
+.logout {
+  display: none;
+  position: absolute;
+  color: red;
+  margin-left: -1.5rem;
+  margin-top: 0.3rem;
+  padding: 1rem;
+  background: #003254;
+  cursor: pointer;
+}
 
 .welcome {
   position: absolute;
@@ -492,11 +508,8 @@ footer {
 .infos_sub ol li {
   list-style: none;
 }
-.li-Img {
-  width: 45px;
-  height: 45px;
-border-radius: 50%;
-}
+
+
 .line-con {
   display: flex;
   gap: 1.5rem;
