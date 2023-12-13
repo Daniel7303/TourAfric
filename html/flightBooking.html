@@ -1,195 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/flightBooking.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="../asset/icons/aeroplane.svg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/flightBooking2.css" type="text/css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navBar">
+        <a class="logo" href="/index.html">
+          <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="logo" />
+        </a>
+        <ul>
+          <!-- <li><a href="">Home</a></li> -->
+          <li>
+            <a href="/html/destinationPage.html">Destination</a>
+          </li>
+          <li><a href="/html/aboutUs.html">About us</a></li>
+          <li id="contactLink">
+            <a href="/html/contact.html">Contact us</a>
+          </li>
+          <li id="loginLink">
+            <a href="/html/login.html">Login</a>
+          </li>
+          <li id="signupLink">
+            <a href="/html/signup.html">Signup</a>
+          </li>
+          <li>
+            <img
+              id="imgLink"
+              class="li-Img"
+              src="/asset/images/face.jpg"
+              alt=""
+            />
+          </li>
+        </ul>
+      </nav>
 
-    <title>Booking</title>
-</head>
-<body>
-    <div class="bookingContainer">
-        <div class="headerContainer">
-            <div class="headerNav">
-                <span>BACK</span>
-                <img src="../asset/images/TOUR AFRIK 2 2 (1).png" alt="logo">
-            </div>
-            <div class="titleContainer">
-                <h1>Book Your Flight</h2>
-                <p>Make every moment special</p>
-            </div>
-        <div class="summary">
-            <div class="topContainer">
-                <div class="oneWay">
-                   <img class="roundTripImg" src="../asset/icons/Ellipse 34.svg" alt="">
-                    <h5>one-Way</h5>
-                </div>
-                <div class="roundTrip">
-                    <img class="roundTripImg" src="../asset/icons/Ellipse 36.svg" alt="">
-                    <h5>roundtrip</h5>
-                </div>
-            </div>
-            <div class="bottomContainer">
-                <div class="info">
-                    <h2>From</h2>
-                    <div class="infoContainer">
-
-                        <h3>America</h3>
-                    </div>
-                 </div>   
-                 <div class="info">
-                        <h2>To</h2>
-                        <div class="infoContainer">
-    
-                            <h3>Mambase, Kenya</h3>
-                        </div>
-                </div>
-                <div class="info">
-                    <h2>Departure</h2>
-                    <div class="infoContainer">
-                         <img src="../asset/icons/calendar.svg" alt="">
-                       <h3>2023-12-14</h3>
-                    </div>
-            </div>
-            <div class="info">
-                <h2>Return</h2>
-                <div class="infoContainer">
-
-                    <h3>Click to add Return flight</h3>
-                </div>
-            </div>
-        <div class="info">
-            <h2>1Traveller</h2>
-            <div class="infoContainer">
-                 <img src="../asset/icons/user.svg" alt="user">
-                <h3>Adult1</h3>
-            </div>
+      <div class="hero">
+        <div>
+          <h1>Book Your Flight</h1>
+          <p>Make Every Moments Special</p>
         </div>
-    </div> 
-    </div>
-</div>
-
-     <button class="searchBtn">Search Flight</button>
-    <div class="airLineContainer">
-        <h2>Cheap Airline Deals</h2>
-    <div class="cheapAirlines">
-        
-       <div class="airline">
-          <img class="airlineImg" src="../asset/images/image 11.png" alt="airline image">
-          <div class="countries">
-            <h1 class="country">DUBAI</h1> 
-          <img class="airImg" src="../asset/icons/Vector.svg" alt="">
-          <h1 class="state">Mambase,Kenya</h1>
-          </div>
-          <span class="price">$570</span>
-       </div>
-       <div class="airline">
-           <img class="airlineImg" src="../asset/images/image 12.png" alt="airline image">
-           <div class="countries">
-              <h1 class="country">South Africa</h1> 
-              <img class="airImg" src="../asset/icons/Vector.svg" alt="">
-              <h1 class="state">Garden City,Singapore</h1>
-          </div>
-           <span class="price">$600</span>
-       </div>
-       <div class="airline">
-            <img class="airlineImg" src="../asset/images/image 13.png" alt="airline image">
-           <div class="countries">
-             <h1 class="country">Nigeria</h1> 
-             <img class="airImg" src="../asset/icons/Vector.svg" alt="">
-             <h1 class="state">Cape Town, South Africa</h1>
-          </div>
-            <span class="price">$820</span>
-       </div>
-
-    
-    </div>
-    
-</div>
-<div class="airLineContainer">
-    <h2>Popular Flight </h2>
-    <div class="cheapAirlines">
-       <div class="airline">
-          <img class="airlineImg" src="../asset/images/image 14.png" alt="airline image">
-          <div class="countries">
-            <h1 class="country">Egypt</h1> 
-          <img class="airImg" src="../asset/icons/Vector.svg" alt="">
-          <h1 class="state">East Coast,America</h1>
-          </div>
-          <span class="price">$570</span>
-       </div>
-       <div class="airline">
-           <img class="airlineImg" src="../asset/images/image 15.png" alt="airline image">
-           <div class="countries">
-              <h1 class="country">America</h1> 
-              <img class="airImg" src="../asset/icons/Vector.svg" alt="">
-              <h1 class="state">China CIty,China Town</h1>
-          </div>
-           <span class="price">$600</span>
-       </div>
-       <div class="airline">
-            <img class="airlineImg" src="../asset/images/image 16.png" alt="airline image">
-           <div class="countries">
-             <h1 class="country">Singapore</h1> 
-             <img class="airImg" src="../asset/icons/Vector.svg" alt="">
-             <h1 class="state">Cairo,Egypt</h1>
-          </div>
-            <span class="price">$820</span>
-       </div>
-       </div>
-</div>
-
-     <!-- <div class="footer">
-         <div class="top">
-             <h1>Explore the beauty <br> around you today</h1>
-         </div>
-         <img src="../asset/images/TOUR AFRIK 2 2 (1).png" alt="">
-         <div class="middle">
-              <div class="socials">
-                    <span>Follow us:</span>
-                    <div class="icons">
-                        <img src="../asset/icons/facebook icon.svg" alt="facebook" class="icon">
-                        <img src="../asset/icons/Ellipse 34.svg" alt="" class="icon">
-                        <img src="../asset/icons/Google.svg" alt="" class="icon">
-                        <img src="../asset/icons/linkedin icon.svg" alt="" class="icon">
-
-                    </div>
+        <form
+          method="GET"
+          onsubmit="event.preventDefault();  storeFormData(); "
+        >
+          <div>
+            <div>
+              <div>
+                <input
+                  type="radio"
+                  name="tripType"
+                  id="oneway"
+                  required
+                /><label for="oneway">One-Way</label>
               </div>
-              <div class="category">
-                 <h1>category</h1>
-                 <div class="categoryItem">
-                    <span>About Us</span>
-                    <span>Our Services</span>
-                    <span>Careers</span>
-                 </div>
-            
+              <div>
+                <input
+                  type="radio"
+                  name="tripType"
+                  id="roundTrip"
+                  required
+                /><label for="roundTrip">Round Trip</label>
               </div>
-               <div class="category">
-                <h1>Contact</h1>
-                <div class="categoryItem">
-                   <span>About Us</span>
-                   <span>Our Services</span>
-                   <span>Careers</span>
-                </div>
-               </div>
-               <div class="category">
-                <h1>Resources</h1>
-                <div class="categoryItem">
-                   <span>About Us</span>
-                   <span>Our Services</span>
-                   <span>Careers</span>
-                </div>
-               </div>
-              
-         </div>
-         <div class="copyright">
-            <span> Copyright 2023 Genesys Upskill Group 5 All rights reserved.</span>
-            <span>Terms of Services</span>
-         </div>
+            </div>
+            <div>
+              <div>
+                <label for="from">From</label>
+                <select id="from" name="from" required>
+                  <option value="">Select a location</option>
+                  <option value="Dubai">Dubai</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Egypt">Egypt</option>
+                  <option value="America">America</option>
+                  <option value="Singapore">Singapore</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+              <div>
+                <label for="to">To</label>
+                <select id="to" name="to" required>
+                  <option value="">Select a location</option>
+                  <option value="Mambase, Kenya">Mambase, Kenya</option>
+                  <option value="Garden City, Singapore">
+                    Garden City, Singapore
+                  </option>
+                  <option value="Cape Town, South Africa">
+                    Cape Town, South Africa
+                  </option>
+                  <option value="East Coast, America">
+                    East Coast, America
+                  </option>
+                  <option value="China City, China Town">
+                    China City, China Town
+                  </option>
+                  <option value="Cario, Egypt">Cario, Egypt</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+              <div>
+                <label for="departure">Departure</label
+                ><input type="date" name="departure" id="departure" required />
+              </div>
+              <div>
+                <label for="return">Return</label
+                ><input type="date" name="return" id="return" required />
+              </div>
+              <div>
+                <label for="adults">Adults:</label>
+                <select id="adults" name="adults" required>
+                  <option value="1 adult">1 Adult</option>
+                  <option value="2 adults">2 Adults</option>
+                  <option value="3 adults">3 Adults</option>
+                  <option value="4 adults">4 Adults</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit">Book Flight</button>
+        </form>
       </div>
-      -->
+      <div class="flight-deals">
+        <div>
+          <h2>Cheap Airline Deals</h2>
+          <div class="image-grid">
+            <!-- Place your image URLs in the src attributes -->
+            <a href="#">
+              <div>
+                <p>
+                  <span class="from-location">Dubai</span> &nbsp;<i
+                    class="fas fa-arrow-right"
+                  ></i>
+                  &nbsp;<span class="to-location">Mambase, Kenya</span>
+                </p>
+                <p><i class="fas fa-dollar-sign"></i>570</p>
+              </div>
+              <img src="/asset/images/image 11.png" alt="Image 1" />
+            </a>
+            <a href="#">
+              <div>
+                <p>
+                  <span class="from-location">South Africa</span>&nbsp;<i
+                    class="fas fa-arrow-right"
+                  ></i>
+                  &nbsp;<span class="to-location">Garden City, Singapore</span>
+                </p>
+                <p><i class="fas fa-dollar-sign"></i>600</p>
+              </div>
+              <img src="/asset/images/image 12.png" alt="Image 1" />
+            </a>
+            <a href="#">
+              <div>
+                <p>
+                  <span class="from-location">Nigeria</span> &nbsp;<i
+                    class="fas fa-arrow-right"
+                  ></i>
+                  &nbsp;<span class="to-location">Cape Town, South Africa</span>
+                </p>
+                <p><i class="fas fa-dollar-sign"></i>820</p>
+              </div>
+              <img src="/asset/images/image 13.png" alt="Image 1" />
+            </a>
+          </div>
+        </div>
+        <div>
+          <h2>Popular flight</h2>
+          <div class="image-grid">
+            <!-- Place your image URLs in the src attributes -->
+            <a href="/index.html">
+              <div>
+                <p>
+                  <span class="from-location">Egypt</span> &nbsp;<i
+                    class="fas fa-arrow-right"
+                  ></i>
+                  &nbsp;<span class="to-location">East Coast, America</span>
+                </p>
+                <p><i class="fas fa-dollar-sign"></i>2500</p>
+              </div>
+              <img src="/asset/images/image 14.png" alt="Image 1" />
+            </a>
+            <a href="">
+              <div>
+                <p>
+                  <span class="from-location">America</span>&nbsp;<i
+                    class="fas fa-arrow-right"
+                  ></i>
+                  &nbsp;<span class="to-location">China City, China Town</span>
+                </p>
+                <p><i class="fas fa-dollar-sign"></i>2700</p>
+              </div>
+              <img src="/asset/images/image 15.png" alt="Image 1" />
+            </a>
+            <a href="">
+              <div>
+                <p>
+                  <span class="from-location">Singapore</span>&nbsp;<i
+                    class="fas fa-arrow-right"
+                  ></i>
+                  &nbsp;<span class="to-location">Cario, Egypt</span>
+                </p>
+                <p><i class="fas fa-dollar-sign"></i>1800</p>
+              </div>
+              <img src="/asset/images/image 16.png" alt="Image 1" />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+    <footer>
+      <div class="footer">
+        <h3>Explore the beauty around you today!</h3>
+      </div>
 
-</body>
+      <section class="foot_one">
+        <div class="container">
+          <img class="flogo" src="/asset/logo/TOUR AFRIK 2 1.png" alt="" />
+          <div class="follow">
+            <div class="socials">
+              <p>follow us:</p>
+              <div class="follow_img">
+                <img src="/asset/icons/facebook icon.svg" alt="" />
+                <img src="/asset/icons/X icon.svg" alt="" />
+                <img src="/asset/icons/instagram icon.svg" alt="" />
+                <img src="/asset/icons/linkedin icon.svg" alt="" />
+              </div>
+            </div>
+            <div class="infos">
+              <div class="infos_sub">
+                <p>Company</p>
+                <div class="line-con">
+                  <div class="line"></div>
+                  <ol>
+                    <a href="about.html">About Us</a>
+                    <a href="">Our Services</a>
+                    <a href="">Career</a>
+                  </ol>
+                </div>
+              </div>
+              <div class="infos_sub">
+                <p>Contact</p>
+                <div class="line-con">
+                  <div class="line"></div>
+                  <ol>
+                    <a href="tel:+2341234567890">+234 123 456 7890</a>
+                    <a href="mailto:info@tourafrik.com">info@tourafrik.com</a>
+                    <a href="mailto:book@tourafrik.com">book@tourafrik.com</a>
+                  </ol>
+                </div>
+              </div>
+              <div class="infos_sub">
+                <p>Resources</p>
+                <div class="line-con">
+                  <div class="line"></div>
+                  <ol>
+                    <li>Travel</li>
+                    <a href="">Destination</a>
+                    <li>review</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hori-line"></div>
+          <div class="copyright">
+            <p>
+              Copyright &copy; 2023 Genesys Upskill Group 5 All rights reserved.
+            </p>
+            <p>Terms of Services</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="/Javascript/script.js"></script>
+    <script src="/Javascript/flightBooking.js"></script>
+    <!-- <script src="/Javascript/flightDetails2.js"></script>  -->
+  </body>
 </html>

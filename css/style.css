@@ -6,15 +6,11 @@
 ::-webkit-scrollbar-thumb {
   background-color: #001c2e;
   margin-left: 10px; /* Set your preferred color */
-
 }
 
 ::-webkit-scrollbar-track {
   background-color: transparent; /* Set the background color to transparent */
-  
 }
-
-
 
 * {
   margin: 0;
@@ -25,7 +21,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 a {
   text-decoration: none;
@@ -52,11 +48,15 @@ header {
   width: 100%;
   z-index: 99;
 }
+.navBar ul{
+  display: flex;
+  align-items: center;
+}
 
 .logo img {
   display: block;
 }
-.navBar img{
+.navBar > a img {
   width: 150px;
 }
 .navBar ul {
@@ -109,7 +109,6 @@ header {
   background: rgba(0, 0, 0, 0.5);
   z-index: ;
 }
-
 
 /*  style the content box */
 .content-box {
@@ -493,6 +492,11 @@ footer {
 .infos_sub ol li {
   list-style: none;
 }
+.li-Img {
+  width: 45px;
+  height: 45px;
+border-radius: 50%;
+}
 .line-con {
   display: flex;
   gap: 1.5rem;
@@ -535,10 +539,9 @@ footer {
     padding: 2rem;
   }
 
-.hero-image {
-  height: 500px;
-}
-
+  .hero-image {
+    height: 500px;
+  }
 
   .burger-icon {
     display: flex;
@@ -609,8 +612,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 570px)  {
-
+@media only screen and (max-width: 570px) {
   header .header-background {
     height: 50vh;
   }
@@ -640,15 +642,15 @@ footer {
     width: 300px;
   }
 
- /*  footer */
- .foot_one {
-  padding: 0 0.5rem;
- }
+  /*  footer */
+  .foot_one {
+    padding: 0 0.5rem;
+  }
 
- .flogo {
-  width: ;
-  margin-bottom: -1rem;
- }
+  .flogo {
+    width: ;
+    margin-bottom: -1rem;
+  }
   .container {
     padding: 0 0.1rem;
   }
@@ -672,6 +674,4 @@ footer {
   .foot_one {
     font-size: 0.5rem;
   }
- 
-  
 }

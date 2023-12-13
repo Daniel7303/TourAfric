@@ -24,16 +24,26 @@
       <div class="hero">
         <nav class="navBar">
           <a class="logo" href="/index.html">
-            <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="" width="150px" />
+            <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="" />
           </a>
           <ul>
             <!-- <li><a href="">Home</a></li> -->
-            <li><a href="/html/destinationPage.html">Destination</a></li>
+            <li >
+              <a href="/html/destinationPage.html">Destination</a>
+            </li>
             <li><a href="/html/aboutUs.html">About us</a></li>
-            <li><a href="/html/contact.html">Contact us</a></li>
-            <li class="auth"><a href="/html/login.html">Login </a></li>
-            <li class="auth"><a href="/html/signup.html">Signup</a></li>
+            <li id="contactLink">
+              <a href="/html/contact.html">Contact us</a>
+            </li>
+            <li id="loginLink">
+              <a href="/html/login.html">Login</a>
+            </li>
+            <li id="signupLink">
+              <a href="/html/signup.html">Signup</a>
+            </li>
+            <li><img id="imgLink" class="li-Img" src="/asset/images/face.jpg" alt="" /></li>
           </ul>
+
           <div class="burger-icon" onclick="toggleNav()">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -569,6 +579,7 @@
         </div>
       </section>
     </footer>
+    <script src="/Javascript/script.js"></script>
     <script src="/script.js"></script>
     <script src="/Javascript/signup.js"></script>
   </body>

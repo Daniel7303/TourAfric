@@ -1,94 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/payment.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <header>
-        <div class="logo">
-          <img src="/logo/TOUR AFRIK 2 2.png" alt="" />
-          <p>Explore the beauty around the world!</p>
-        </div>
-      </header>
+      <div class="logo">
+        <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="" />
+        <p>Explore the beauty around the world!</p>
+      </div>
+    </header>
 
-<section>
-  <div>
-    
-  </div>
-</section>
+    <section class="payment-cont">
+      <div class="payment">
+        <h4>Payment</h4>
+        <p>CREDIT CARD</p>
+      </div>
 
+      <div class="credit-details">
+        <img src="/asset/icons/visa.svg" alt="" />
+        <img src="/asset/icons/mastercard.svg" alt="" />
+        <img src="/asset/icons/paypal.svg" alt="" />
+      </div>
 
+      <div class="card-payments">
+        <div class="card-number">
+          <form action="">
+            <label for="card number">Card Number</label>
 
-
-      
-<!--The Footer-->
-<footer>
-    <div class="explore">
-      <h3>Explore the beauty around you today!</h3>
-    </div>
-
-    <section class="foot_one">
-      <div class="container">
-        <img src="/logo/TOUR AFRIK 2 3.png" alt="" />
-        <div class="follow">
-          <div class="socials">
-            <p>follow us:</p>
-            <div class="follow_img">
-              <img src="/asset/icons/facebook icon.svg" alt="" />
-              <img src="/asset/icons/X icon.svg" alt="" />
-              <img src="/asset/icons/instagram icon.svg" alt="" />
-              <img src="/asset/icons/linkedin icon.svg" alt="" />
-            </div>
+            <div class="span-type">
+            <span><img src="/asset/icons/calendar.svg" alt="" /></span>
+            <input type="card number" id="card-number" name="card number" />
           </div>
-          <div class="infos">
-            <div class="infos_sub">
-              <p>Company</p>
-              <div class="line-con">
-                <div class="line"></div>
-                <ol>
-                  <a href="about.html">About Us</a>
-                  <a href="">Our Services</a>
-                  <a href="">Career</a>
-                </ol>
-              </div>
-            </div>
-            <div class="infos_sub">
-              <p>Contact</p>
-              <div class="line-con">
-                <div class="line"></div>
-                <ol>
-                  <a href="tel:+2341234567890">+234 123 456 7890</a>
-                  <a href="mailto:info@tourafrik.com">info@tourafrik.com</a>
-                  <a href="mailto:book@tourafrik.com">book@tourafrik.com</a>
-                </ol>
-              </div>
-            </div>
-            <div class="infos_sub">
-              <p>Resources</p>
-              <div class="line-con">
-                <div class="line"></div>
-                <ol>
-                  <li>Travel</li>
-                  <a href="">Destination</a>
-                  <li>review</li>
-                </ol>
-              </div>
-            </div>
-          </div>
+          </form>
         </div>
 
-        <div class="hori-line"></div>
-        <div class="copyright">
-          <p>
-            Copyright &copy; 2023 Genesys Upskill Group 5 All rights reserved.
-          </p>
-          <p>Terms of Services</p>
+        <div class="expiry">
+          <form action="">
+            <label for="expiry date">Expiry Date</label>
+            <input type="expiry date" id="expiry-date" name="expiry date" />
+          </form>
         </div>
       </div>
+
+      <div class="cvv-cand">
+        <div class="candidate">
+          <form action="">
+            <label for="candidate name">Candidate Name</label>
+            <input
+              type="candidate name"
+              id="candidate-name"
+              name="candidate name"
+            />
+          </form>
+        </div>
+
+        <div class="cvv">
+          <form action="">
+            <label for="cvv">CVV</label>
+            <input type="cvv" id="cvv" name="cvv" />
+          </form>
+        </div>
+      </div>
+
+      <div class="checkbox">
+        <div class="check">
+        <input type="checkbox" />
+        <label for="mycheckebox"> I accept the Terms & Condition </label>
+        </div>
+        <button type="pay">Pay</button>
+      </div>
     </section>
-  </footer>
-</body>
-</html>
+
+       <!--The Footer-->
+       <footer>
+        <div class="xplore">
+          <h3>Explore the beauty around you today!</h3>
+        </div>
+  
+        <section class="foot_one">
+          <div class="foot_container">
+            <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="" />
+            <div class="follow">
+              <div class="socials">
+                <p>follow us:</p>
+                <div class="follow_img">
+                  <img src="/asset/icons/facebook icon.svg" alt="" />
+                  <img src="/asset/icons/X icon.svg" alt="" />
+                  <img src="/asset/icons/instagram icon.svg" alt="" />
+                  <img src="/asset/icons/linkedin icon.svg" alt="" />
+                </div>
+              </div>
+              <div class="infos">
+                <div class="infos_sub">
+                  <p>Company</p>
+                  <div class="line-con">
+                    <div class="line"></div>
+                    <ol>
+                      <a href="/html/aboutUs.html">About Us</a>
+                      <a href="">Our Services</a>
+                      <a href="">Career</a>
+                    </ol>
+                  </div>
+                </div>
+                <div class="infos_sub">
+                  <p>Contact</p>
+                  <div class="line-con">
+                    <div class="line"></div>
+                    <ol>
+                      <a href="tel:+2341234567890">+234 123 456 7890</a>
+                      <a href="mailto:info@tourafrik.com">info@tourafrik.com</a>
+                      <a href="mailto:book@tourafrik.com">book@tourafrik.com</a>
+                    </ol>
+                  </div>
+                </div>
+                <div class="infos_sub">
+                  <p>Resources</p>
+                  <div class="line-con">
+                    <div class="line"></div>
+                    <ol>
+                      <li>Travel</li>
+                      <a href="/html/destinationPage.html">Destination</a>
+                      <li>review</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="hori-line"></div>
+            <div class="copyright">
+              <p>
+                Copyright &copy; 2023 Genesys Upskill Group 5 All rights reserved.
+              </p>
+              <p>Terms of Services</p>
+            </div>
+          </div>
+        </section>
+      </footer>
+      <script src="/Javascript/destinationPage.js"></script>
+    </body>
+  </html>
+  
