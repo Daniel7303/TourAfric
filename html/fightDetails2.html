@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/flightDetails2.css" type="text/css" />
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navBar">
+        <a class="logo" href="/index.html">
+          <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="logo" />
+        </a>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+
+          <li><a href="/html/aboutUs.html">About us</a></li>
+          <li><a href="/html/contact.html">Contact us</a></li>
+          <!-- <li class="auth"><a href="/html/login.html">Login </a></li>
+          <li class="auth"><a href="/html/signup.html">Signup</a></li> -->
+        </ul>
+        <div class="burger-icon" onclick="toggleNav()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
+      <!-- <div class="img-book">
+    <img src="/asset/images/image 17.png" alt="">
+</div> -->
+      <div class="detail-hero">
+        <div class="from-to-hero">
+          <div class="from-to">
+            <div>
+              <h1 class="from-place">America</h1>
+           -->
+              <p class="random-airport"></p>
+            </div>
+            <div>
+              ..............<i class="fas fa-plane-arrival"></i>...............
+            </div>
+            <div>
+              <h1  class="to-place">KENYA</h1>
+              <!-- <p>Mambase Island</p> -->
+              <p class="radom-airport"></p>
+            </div>
+          </div>
+          <div class="from-to-time">
+            <div>
+              <img src="/asset/images/airline logo.png" width="50px" alt="" />
+              <h5 id="airlineName">American Airlines <span class="random-time">7:00</span></h5>
+            </div>
+
+            <div>
+              <h5 class="random-duration" id="flightDuration">3hr</h5>
+              <p>Non-stop</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="from-to-main">
+          <div class="from-to-pass">
+            <div>
+              <h3>PASSENGER</h3>
+              <p class="name">name</p>
+            </div>
+            <div>
+              <h3>FLIGHT</h3>
+              <p class="random-number">23456</p>
+            </div>
+          </div>
+          <div class="from-to-details">
+            <div>
+              <h3>TERMINAL</h3>
+              <p class="random-digit">10</p>
+            </div>
+            <div>
+              <h3>SEAT</h3>
+              <p class="random-alpha">17 A</p>
+            </div>
+            <div>
+              <h3>CLASS</h3>
+              <p class="flight-plan">Economy</p>
+            </div>
+          </div>
+          <div class="from-to-price">
+            <div>
+              <h3>PRICE</h3>
+              <p>
+                <i class="fas fa-dollar-sign"></i><span class="price" id="flightPrice"></span>USD
+              </p>
+            </div>
+            <div>
+              <button type="submit" >BOOK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <h3>Explore the beauty around you today!</h3>
+      </div>
+
+      <section class="foot_one">
+        <div class="container">
+          <img class="flogo" src="/asset/logo/TOUR AFRIK 2 1.png" alt="" />
+          <div class="follow">
+            <div class="socials">
+              <p>follow us:</p>
+              <div class="follow_img">
+                <img src="/asset/icons/facebook icon.svg" alt="" />
+                <img src="/asset/icons/X icon.svg" alt="" />
+                <img src="/asset/icons/instagram icon.svg" alt="" />
+                <img src="/asset/icons/linkedin icon.svg" alt="" />
+              </div>
+            </div>
+            <div class="infos">
+              <div class="infos_sub">
+                <p>Company</p>
+                <div class="line-con">
+                  <div class="line"></div>
+                  <ol>
+                    <a href="about.html">About Us</a>
+                    <a href="">Our Services</a>
+                    <a href="">Career</a>
+                  </ol>
+                </div>
+              </div>
+              <div class="infos_sub">
+                <p>Contact</p>
+                <div class="line-con">
+                  <div class="line"></div>
+                  <ol>
+                    <a href="tel:+2341234567890">+234 123 456 7890</a>
+                    <a href="mailto:info@tourafrik.com">info@tourafrik.com</a>
+                    <a href="mailto:book@tourafrik.com">book@tourafrik.com</a>
+                  </ol>
+                </div>
+              </div>
+              <div class="infos_sub">
+                <p>Resources</p>
+                <div class="line-con">
+                  <div class="line"></div>
+                  <ol>
+                    <li>Travel</li>
+                    <a href="">Destination</a>
+                    <li>review</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hori-line"></div>
+          <div class="copyright">
+            <p>
+              Copyright &copy; 2023 Genesys Upskill Group 5 All rights reserved.
+            </p>
+            <p>Terms of Services</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="/Javascript/flightDetails2.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
