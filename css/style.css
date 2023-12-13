@@ -249,8 +249,8 @@ main {
 }
 
 .starRat img {
-  width: 20px;
-  height: 20px;
+  width: 1rem;
+  height: 1rem;
   margin-right: 4px;
 }
 
@@ -446,7 +446,7 @@ footer {
   color: #1f4d6f;
 }
 
-./* footer .ftt {
+/* footer .ftt {
   margin-bottom: -rem;
 } */
 
@@ -654,15 +654,48 @@ footer {
     font-size: 1.5rem;
     width: 300px;
   }
+ /*  acrd destination section */
+/*  .card-section {
+  display: flex;
+  gap: 1rem;
+  justify-content: center; 
+} */
+.seemore {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  margin-inline: 2.2rem;
+}
 
+.places-section {
+  position: relative;
+  max-width: 20rem;
+  height: auto; /* Adjusting as needed */
+  border-radius: 40px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 3rem;
+}
+
+/* .places-section img {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+  position: relative;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+ */
   /*  footer */
   .foot_one {
     padding: 0 0.5rem;
   }
 
+  .footer {
+    display: none;
+  }
   .flogo {
-    width: ;
-    margin-bottom: -1rem;
+    display: none;
+   /*  margin-bottom: -1rem; */
   }
   .container {
     padding: 0 0.1rem;
