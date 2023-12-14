@@ -23,7 +23,14 @@ function generateRandomValues() {
   document.querySelector(".random-digit").innerText = generateRandomDigit();
   document.querySelector(".random-alpha").innerText = generateRandomAlpha();
   document.querySelector(".price").innerText = generateRandomPrice();
+  const priceValue = document.querySelector(".price").innerText;
+
+  localStorage.setItem("totalAmount", priceValue);
+  console.log("Price value is", priceValue);
 }
+
+
+// Store the price value in local storage
 function generateRandomAirport(place) {
   // Map of cities or countries to popular airports
   const airportMapping = {
@@ -187,11 +194,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Function to generate a random name
-    
+
     // Use the user data as needed in flightDetails2.js
     console.log("User Data:", userData.name, userData.email);
   }
-  generateRandomName()
+  generateRandomName();
   generateRandomValues();
 });
 function generateRandomName() {
@@ -208,4 +215,7 @@ function generateRandomName() {
   const randomName = names[Math.floor(Math.random() * names.length)];
   console.log("Generated Random Name:", randomName); // Log the generated random name
   return randomName;
+}
+function loadPaymentDetails(){
+  window.location.href = "/html/payment.html";
 }
