@@ -1,4 +1,15 @@
 // Common functionality for login and signup forms
+function Signout() {
+  // Clear the user data from local storage
+  localStorage.removeItem("loggedInUserEmail");
+
+  // Redirect to the login page or any other page after signout
+  window.location.href = "/index.html";
+}
+function toggleDropDown() {
+  const logDown = document.querySelector(".logout");
+  logDown.style.display = logDown.style.display == "block" ? "none" : "block";
+}
 
 function handleLogin() {
   const email = document.getElementById("email").value;

@@ -4,12 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/itineraryConfirmation.css">
-    
+    <link rel="stylesheet" href="/css/style.css" />
+  
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
     <script src="https://kit.fontawesome.com/4ba3b259ef.js" crossorigin="anonymous"></script>
     <title>TourAfrik</title>
 </head>
 <body>
-
+    <nav class="navBar">
+        <a class="logo" href="/index.html">
+          <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+         
+         
+          <li><a href="/html/aboutUs.html">About us</a></li>
+          <li id="contactLink">
+            <a href="/html/contact.html">Contact us</a>
+          </li>
+  <!-- 
+          <li id="loginLink">
+            <a href="/html/login.html"></a>
+          </li>
+          <li id="signupLink">
+            <a href="/html/signup.html"></a>
+          </li> -->
+          <li><img id="imgLink" class="li-Img" src="/asset/images/profile.png" alt="" onclick="toggleDropDown()"/><div class="logout"><h4 onclick="Signout()">SignOut</h4></div></li>
+        </ul>
+      </nav>
     <div class="wrapper">
         <header class="itineHeader">
             <p class="itineDate">12/04/23</p>

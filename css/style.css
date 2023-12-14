@@ -130,6 +130,9 @@ border-radius: 50%;
   background: rgba(0, 0, 0, 0.5);
   z-index: ;
 }
+#imgLink{
+  cursor: pointer;
+}
 
 /*  style the content box */
 .content-box {
