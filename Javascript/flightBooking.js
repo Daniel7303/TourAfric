@@ -77,3 +77,17 @@ function redirectToLogin() {
   console.log("Redirecting to login page...");
  
 }
+document.addEventListener("DOMContentLoaded", function () {
+  // Add event listener to radio buttons
+  const oneWayRadio = document.getElementById("oneway");
+  const roundTripRadio = document.getElementById("roundTrip");
+  const returnDateContainer = document.getElementById("returnDateContainer");
+
+  oneWayRadio.addEventListener("change", function () {
+    returnDateContainer.style.display = "none";
+  });
+
+  roundTripRadio.addEventListener("change", function () {
+    returnDateContainer.style.display = "block";
+  });
+});
