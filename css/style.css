@@ -292,14 +292,17 @@ main {
 }
 
 .places-section button {
-  margin: -2.7rem 1.2rem 0 2rem;
+  // margin: -2.7rem 1.2rem 0 2rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
   padding: 0.5rem 1rem;
   background: #0e3854;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
-  float: right;
+  // float: right;
 }
 
 /* our services section */
