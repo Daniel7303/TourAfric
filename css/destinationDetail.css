@@ -6,6 +6,7 @@
 }
 body {
   font-family: 'Poppins';
+  flex-grow: inherit;
 }
 .hero-image {
   height: 100%;
@@ -270,6 +271,9 @@ a {
 }
 .socials {
   display: flex;
+}
+.socials-icons {
+  margin-right: 20px;
 }
 .socials div {
   margin-right: 100px;
@@ -641,6 +645,11 @@ a:hover {
 
   .socials div {
     margin-right: 5px;
+    margin-bottom: 20px;
+  }
+  .socials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .copyright {
@@ -652,10 +661,14 @@ a:hover {
     gap: 60px;
   }
   .terms {
-    position: relative;
+    position: none;
     font-size: 9px;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
     margin-right: 5px;
+    margin-top: 0px;
     width: 100%;
+  }
+  .lines {
+    height: 80px;
   }
 }
