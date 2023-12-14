@@ -34,16 +34,22 @@ function setSelectedOption(selectId, optionText) {
 }
 function flightBooking() {
   const userEmail = localStorage.getItem("loggedInUserEmail");
-  if (!userEmail) {
+
+  // Check if the user is already on the login page
+  if (userEmail && window.location.pathname !== "/html/login.html") {
+    // User is logged in and not on the login page, continue with flight booking logic
+    console.log(`User ${userEmail} is logged in. Continue with flight booking logic.`);
+  } else {
+    // User is not logged in or on the login page, store the current page URL and redirect to login
+    storeCurrentPage();
     window.location.href = "/html/login.html";
-    return; // Stop further execution of the function
   }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
   // Get all anchor links in the navbar
   var navLinks = document.querySelectorAll(".flight-deals a");
-
+  flightBooking();
   // Add click event listener to each link
   navLinks.forEach(function (link) {
     link.addEventListener("click", function (event) {
@@ -58,6 +64,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  flightBooking();
-});
+
+function storeCurrentPage() {
+  const currentPageUrl = window.location.href;
+  sessionStorage.setItem("redirectAfterLogin", currentPageUrl);
+  console.log(`Stored current page URL: ${currentPageUrl}`);
+}
+
+// Function to redirect to the login page
+function redirectToLogin() {
+  storeCurrentPage(); // Store the current page URL before redirecting
+  console.log("Redirecting to login page...");
+ 
+}

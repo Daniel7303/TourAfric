@@ -3,189 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/payment.css" type="text/css" />
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/css/payment.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/toast.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
     />
-    <title>Document</title>
+    <title>Secure Payment</title>
   </head>
-
   <body>
-    <header>
-      <!-- <div class="logo">
-        <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="" width="200px"/>
-        <p>Explore the beauty around the world!</p>
-      </div> -->
-      <nav class="navBar">
-        <a class="logo" href="/index.html">
-          <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="logo"  />
-        
-        </a>
-       <!--  <ul>
-           <li><a href="">Home</a></li> 
-          <li >
-            <a href="/html/destinationPage.html">Destination</a>
-          </li>
-          <li><a href="/html/aboutUs.html">About us</a></li>
-          <li id="contactLink">
-            <a href="/html/contact.html">Contact us</a>
-          </li>
-          <li id="loginLink">
-            <a href="/html/login.html"></a>
-          </li>
-          <li id="signupLink">
-            <a href="/html/signup.html"></a>
-          </li>
-          <li><img id="imgLink" class="li-Img" src="/asset/images/face.jpg" alt="" /></li>
-        </ul> -->
-      </nav>
-    </header>
-
-    <section class="payment-cont">
-      <div class="payment">
-        <h4>Payment</h4>
-        <p>CREDIT CARD</p>
+    <nav class="navBar">
+      <a class="logo" href="/index.html">
+        <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="logo" />
+      </a>
+      <ul>
+        <!-- <li><a href="">Home</a></li> -->
+        <li>
+          <a href="/html/flightDetails.html">Flight Details</a>
+        </li>
+        <!-- <li><a href="/html/aboutUs.html">About us</a></li>
+        <li id="contactLink">
+          <a href="/html/contact.html">Contact us</a>
+        </li> -->
+        <li id="loginLink">
+          <a href="/html/login.html"></a>
+        </li>
+        <li id="signupLink">
+          <a href="/html/signup.html"></a>
+        </li>
+        <li>
+          <img
+            id="imgLink"
+            class="li-Img"
+            src="/asset/images/face.jpg"
+            alt=""
+          />
+        </li>
+      </ul>
+    </nav>
+    <div class="payment-container">
+      <h1>Secure Payment</h1>
+      <div class="card-types">
+        <img src="/asset/icons/visa.svg" alt="Visa" />
+        <img src="/asset/icons/mastercard.svg" alt="Mastercard" />
       </div>
-
-      <div class="credit-details">
-        <img src="/asset/icons/visa.svg" alt="" />
-        <img src="/asset/icons/mastercard.svg" alt="" />
-        <img src="/asset/icons/paypal.svg" alt="" />
+      <div class="amount">
+        <p>Total Amount: $<span>100</span></p>
       </div>
-
-      <!-- too much containers -->
+      <form
       
-      <div class="card-payments">
-        <div class="card-number">
-          <form action="">
-            <label for="card number">Card Number</label>
+        id="payment-form"
+        onsubmit="event.preventDefault(); simpleToast(); "
+      >
+        <label for="cardholder-name">Cardholder Name</label>
+        <input
+          type="text"
+          id="cardholder-name"
+          placeholder="John Doe"
+          required
+        />
+        <label for="card-number">Card Number</label>
+        <input
+          type="text"
+          id="card-number"
+          placeholder="1234 5678 9012 3456"
+          maxlength="19"
+          required
+        />
 
-            <div class="span-type">
-              <span><img src="/asset/icons/calendar.svg" alt="" /></span>
-              <input
-                type="card number"
-                id="card-number"
-                name="card number"
-                required
-              />
-            </div>
-          </form>
-        </div>
-
-        <div class="expiry">
-          <form action="">
-            <label for="expiry date">Expiry Date</label>
+        <div class="exp-cvv">
+          <div class="expiry-date">
+            <label for="expiry-date">Expiry Date</label>
             <input
-              type="expiry date"
+              type="text"
               id="expiry-date"
-              name="expiry date"
+              placeholder="MM/YY"
+              maxlength="5"
               required
             />
-          </form>
-        </div>
-      </div>
-
-      <div class="cvv-cand">
-        <div class="candidate">
-          <form action="">
-            <label for="candidate name">Candidate Name</label>
-            <input
-              type="candidate name"
-              id="candidate-name"
-              name="candidate name"
-              required
-            />
-          </form>
-        </div>
-
-        <div class="cvv">
-          <form action="">
-            <label for="cvv">CVV</label>
-            <input type="cvv" id="cvv" name="cvv" required />
-          </form>
-        </div>
-      </div>
-
-      <div class="checkbox">
-        <div class="check">
-          <input type="checkbox" required />
-          <label for="mycheckebox"> I accept the Terms & Condition </label>
-        </div>
-       
-      </div>
-      <button type="pay">Pay</button>
-    </section>
-
-    <!--The Footer-->
-    <!--  <footer>
-        <div class="xplore">
-          <h3>Explore the beauty around you today!</h3>
-        </div>
-  
-        <section class="foot_one">
-          <div class="foot_container">
-            <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="" />
-            <div class="follow">
-              <div class="socials">
-                <p>follow us:</p>
-                <div class="follow_img">
-                  <img src="/asset/icons/facebook icon.svg" alt="" />
-                  <img src="/asset/icons/X icon.svg" alt="" />
-                  <img src="/asset/icons/instagram icon.svg" alt="" />
-                  <img src="/asset/icons/linkedin icon.svg" alt="" />
-                </div>
-              </div>
-              <div class="infos">
-                <div class="infos_sub">
-                  <p>Company</p>
-                  <div class="line-con">
-                    <div class="line"></div>
-                    <ol>
-                      <a href="/html/aboutUs.html">About Us</a>
-                      <a href="">Our Services</a>
-                      <a href="">Career</a>
-                    </ol>
-                  </div>
-                </div>
-                <div class="infos_sub">
-                  <p>Contact</p>
-                  <div class="line-con">
-                    <div class="line"></div>
-                    <ol>
-                      <a href="tel:+2341234567890">+234 123 456 7890</a>
-                      <a href="mailto:info@tourafrik.com">info@tourafrik.com</a>
-                      <a href="mailto:book@tourafrik.com">book@tourafrik.com</a>
-                    </ol>
-                  </div>
-                </div>
-                <div class="infos_sub">
-                  <p>Resources</p>
-                  <div class="line-con">
-                    <div class="line"></div>
-                    <ol>
-                      <li>Travel</li>
-                      <a href="/html/destinationPage.html">Destination</a>
-                      <li>review</li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-            <div class="hori-line"></div>
-            <div class="copyright">
-              <p>
-                Copyright &copy; 2023 Genesys Upskill Group 5 All rights reserved.
-              </p>
-              <p>Terms of Services</p>
-            </div>
           </div>
-        </section>
-      </footer> -->
-    <script src="/Javascript/destinationPage.js"></script>
+          <div class="cvv">
+            <label for="cvv">CVV</label>
+            <input
+              type="text"
+              id="cvv"
+              placeholder="123"
+              maxlength="3"
+              required
+            />
+          </div>
+        </div>
+
+        <button type="submit">Pay Now</button>
+      </form>
+    </div>
+    <div id="simpleToast">
+      <span>Payment Successful!...</span>
+    </div>
+    <div id="simpleToast2">
+      <span>Redirecting...</span>
+    </div>
+    <script src="/Javascript/payment.js"></script>
   </body>
 </html>

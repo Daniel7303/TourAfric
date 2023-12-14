@@ -1,281 +1,83 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
-  text-transform: capitalize;
-  width: 100%;
-  position: relative;
-}
-/* The Header */
-header {
-  width: 100%;
-  background-color: #0e3854;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #024a79;
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: white;
-}
-.logo {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  justify-content: center;
+  height: 100vh;
 }
 
-/* header p {
-  position: relative;
-  top: -40px;
-  left: 99px;
-} */
-
-/* .explore {
-  background: url(/asset/images/footer.png) center/cover no-repeat;
-  width: 100%;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-} */
-
-/* .explore h3 {
+.payment-container {
+  background: rgba(255, 255, 255); /* Translucent white background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  font-size: 40p;
-  padding-inline: 35;
-  color: #1f4d6f;
-  padding-top: 20p;
-  padding-bottom: 20p;
-} */
-
-section {
-  margin-top: 5rem;
-  padding: 0 2rem;
-}
-
-
-.payment {
-  padding-top: 2rem;
-}
-
-.payment h4 {
-  font-size: 1.8rem;
-  padding-bottom: 1rem;
-}
-
-.payment p {
-  font-size: 0.9rem;
-  padding-bottom: 3rem;
-}
-
-.credit-details img {
-  width: 7rem;
-  height: 4.5rem;
-}
-.credit-details {
-  padding-bottom: 3rem;
-}
-
-.card-payments {
-  display: flex;
-  gap: 3rem;
-  padding-bottom: 2rem;
-}
-
-.card-number form {
-  display: flex;
-  flex-direction: column;
-}
-
-#card-number {
-    background-color:#D9D9D9 ;
-    width: 13rem;
-    height: 1rem;
-    border-radius: 6px;
-    outline: none;
-    border: none;
-}
-
-.span-type{
-    background-color: #D9D9D9;
-    display: flex;
-    align-items: center;
-    padding: 0.5rem;
-    border-radius: 5px;
-}
-
-.expiry form{
-    display: flex;
-    flex-direction: column; 
-}
-#expiry-date{
-    background-color:#D9D9D9 ;
-    width: 10rem;
-    height: 3.5rem;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    
-}
-.cvv-cand {
-    display: flex;
-    gap: 3rem;
-    padding-bottom: 2rem;
-  }
-
-  .candidate form{
-    display: flex;
-    flex-direction: column; 
-}
-#candidate-name{
-    background-color:#D9D9D9 ;
-    width: 15rem;
-    height: 3.5rem;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    }
-
-    .cvv form{
-        display: flex;
-        flex-direction: column; 
-    }
-    #cvv{
-        background-color:#D9D9D9 ;
-        width: 15rem;
-        height: 3.5rem;
-        border-radius: 5px;
-        outline: none;
-        border: none;
-        }
-
-        .checkbox{
-            display: flex;
-            margin-bottom: 3rem;
-            gap: 10rem;
-            align-items: center;
-        }
-
-        button{
-            color: white;
-            background-color: #003254;  
-            padding: 1rem 3rem;
-            margin-bottom: 2rem;
-            border-radius: 0.2rem;
-            cursor: pointer;
-            border: none;
-        }
-      input {
-        padding-left: 10px;
-      }
-    
-/* Footer */
-/* .foot_container{padding: 0 5rem;}
-
-.xplore {
-  background: url(/asset/images/footer.png) center/cover no-repeat;
+  max-width: 400px;
   width: 100%;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  margin-top: 7rem;
+}
+h1 {
+  color: #003254;
 }
 
-.xplore h3 {
-  text-align: center;
-  font-size: 40px;
-  padding-inline: 35%;
-  color: #1F4D6F;
+.card-types {
+  margin: 10px 0;
 }
 
-.foot_one {
+.card-types img {
+  width: 40px;
+  margin: 0 5px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #003254;
+  font-weight: 400;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.amount p {
+  color: #003254;
+}
+
+.exp-cvv {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.expiry-date,
+.cvv {
+  width: 48%;
+}
+
+button {
   background: #003254;
-  color: white;
-}
-
-.foot_one img {
-  width: 150px;
-  margin-top: 1rem;
-}
-.follow {
-  display: flex;
-  justify-content: space-between;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
   width: 100%;
 }
-.socials {
-  display: flex;
-  flex-direction: column;
-}
-.socials img {
-  width: 20px;
-  margin-top: 10px;
+
+button:hover {
+  background: #001e36;
 }
 
-.infos {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-.infos_sub {
-  display: flex;
-  flex-direction: column;
-}
-
-.infos_sub ol {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-
-.infos_sub ol a {
-  color: white;
-  text-decoration: none;
-}
-
-.infos_sub ol li {
-  list-style: none;
-}
-.line-con {
-  display: flex;
-  gap: 1.5rem;
-}
-.line {
-  height: 100px;
-  width: 3px;
-  background: #b4b7b8;
-}
-.hori-line {
-  width: 100%;
-  height: 3px;
-  background: #b4b7b8;
-  margin-top: 5px;
-}
-.copyright {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 2px;
-} */
-
-@media (max-width: 700px){
-
-    .card-payments{
-        flex-wrap: wrap;
-    }
-
-    .cvv-cand{
-        flex-wrap: wrap;
-    }
-
-    .checkbox{
-        flex-wrap: wrap;
-    }
-    .credit-details img {
-        width: 5rem;
-    }
-    
-    /* .foot_container{padding: 0.2rem 0.2rem;}
-
-    .xplore h3 {
-      font-size: 25px;
-      padding-inline: 20%;
-  } */
-
+.amount span{
+  font-weight: 700;
 }
