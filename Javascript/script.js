@@ -46,6 +46,12 @@ function handleSignup() {
   simpleToast("Signup Successful!...");
 }
 
+
+
+
+
+
+
 function togglePasswordVisibility() {
   // Toggle password visibility logic (if needed)
 }
@@ -155,3 +161,10 @@ function storeFormData() {
   window.location.href = "/html/flightDetails.html";
 }
 
+function showFlightDetailsLink() {
+  // Your logic to determine whether to show or hide the element
+  const shouldShow = true;
+
+  // Store the flag in local storage
+  localStorage.setItem("showFlightDetails", shouldShow);
+}
