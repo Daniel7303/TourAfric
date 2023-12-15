@@ -61,6 +61,11 @@ button{
 .logo img {
   display: block;
 }
+body > header > div.hero > nav > a > img:nth-child(2) {
+  width: 50px;
+  display: none;
+}
+
 .navBar > a img {
   width: 150px;
 }
@@ -650,6 +655,13 @@ footer {
   header .header-background {
     height: 50vh;
   }
+  body > header > div.hero > nav > a > img:nth-child(2) {
+    display: block;
+  }
+  body > header > div.hero > nav > a > img:nth-child(1) {
+    display: none;
+  }
+
   .welcome {
     font-size: 1.5rem;
     padding: 2rem;
