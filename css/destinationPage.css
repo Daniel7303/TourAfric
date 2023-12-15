@@ -59,7 +59,7 @@ header p {
   line-height: 1.5rem;
 }
 
-.box {
+body > div.box{
   padding: 5rem
 }
 

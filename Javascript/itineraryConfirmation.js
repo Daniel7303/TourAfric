@@ -130,13 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const airportCodeFrom = extractAirportCode(airportFrom);
   const random17DigitNumber = generateRandom17DigitNumber();
   const randomNumberElement = document.querySelector(".travelInner p");
-  console.log("toTime:", toTime);
-  console.log("fromTime:", fromTime);
-  console.log("seatName:", seatName);
-  console.log("airportTo:", airportTo);
-  console.log("airportFrom:", airportFrom);
-  console.log("randomNames:", randomNames);
-  console.log("storedPrice:", storedPrice);
+
   
   const grandTotalAmount = tax + baseFare + storedPrice * adultsValue;
   randomNumberElement.textContent = random17DigitNumber;

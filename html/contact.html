@@ -4,24 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="/css/contact.css" /> -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/form.css">
-    <link rel="stylesheet" href="/css/toast.css">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/form.css" />
+    <link rel="stylesheet" href="/css/toast.css" />
     <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Poppins"
-  />
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
     <nav class="navBar">
       <a class="logo" href="/index.html">
         <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="" />
-      
       </a>
       <ul>
         <!-- <li><a href="">Home</a></li> -->
-        <li >
+        <li>
           <a href="/html/destinationPage.html">Destination</a>
         </li>
         <li><a href="/html/aboutUs.html">About us</a></li>
@@ -29,25 +36,54 @@
           <a href="/html/contact.html">Contact us</a>
         </li>
         <li id="loginLink">
-         <!--  <a href="/html/login.html">Login</a>
+          <!--  <a href="/html/login.html">Login</a>
         </li>
         <li id="signupLink">
           <a href="/html/signup.html">Signup</a>
         </li> -->
-        <li><img id="imgLink" class="li-Img" src="/asset/images/profile.png" alt="" onclick="toggleDropDown()"/><div class="logout"><h4 onclick="Signout()">SignOut</h4></div></li>
+        </li>
+
+        <li>
+          <img
+            id="imgLink"
+            class="li-Img"
+            src="/asset/images/profile.png"
+            alt=""
+            onclick="toggleDropDown()"
+          />
+          <div class="logout"><h4 onclick="Signout()">SignOut</h4></div>
+        </li>
       </ul>
     </nav>
     <div class="sign-up-container">
       <div class="top">
         <h1>Contact Us</h1>
-        <p>Fill out the form and our support management will reach you in 24 hours.</hp>
+        <p>
+          Fill out the form and our support management will reach you in 24
+          hours.
+        </p>
       </div>
-
-      <form action="" id="signupForm" onsubmit="event.preventDefault(); simpleToast();">
+      <form
+        action=""
+        id="signupForm"
+        onsubmit="event.preventDefault(); simpleToast();"
+      >
         <label for="fname">First name</label>
-        <input type="text" id="fname" name="fname" placeholder="First name" required/>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="First name"
+          required
+        />
         <label for="lname">Last name</label>
-        <input type="text" id="lname" name="lname" placeholder="Last name" required/>
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Last name"
+          required
+        />
         <label for="email">Email</label>
         <input
           type="email"
@@ -57,22 +93,99 @@
           required
         />
         <label for="tel">Phone</label>
-        <input type="tel" id="tel" name="tel" placeholder="Enter Phone number" required/>
+        <input
+          type="tel"
+          id="tel"
+          name="tel"
+          placeholder="Enter Phone number"
+          required
+        />
 
         <div class="check-box">
-            <input type="checkbox"/>
-            <label for="mycheckebox">
-                Yes, I want to recieve more calls and emails from TourAfrik's Management 
-            </label>
-          </div>
-
-          <button>SUBMIT FORM</button>
-        </form>
+          <input type="checkbox" />
+          <label for="mycheckebox">
+            Yes, I want to recieve more calls and emails from TourAfrik's
+            Management
+          </label>
         </div>
-        <div id="simpleToast" >
-          <span>Message Successfully Sent!...</span>
-       </div>
-       <script src="/Javascript/script.js"></script>
-       <script src="/Javascript/form.js"></script>
+
+        <button>SUBMIT FORM</button>
+      </form>
+    </div>
+    <div id="simpleToast">
+      <span>Message Successfully Sent!...</span>
+    </div>
+    <footer>
+      <div class="content">
+        <div class="top">
+          <div class="logo-details">
+            <a class="logo" href="/index.html">
+              <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="" />
+            </a>
+          </div>
+          <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="link-boxes">
+          <ul class="box">
+            <li class="link_name">Company</li>
+            <li><a href="/html/aboutUs.html">About Us</a></li>
+            <li><a href="/html/destinationPage.html">Our Services</a></li>
+            <li><a href="#">Career</a></li>
+            <!-- <li><a href="#">Contact Us</a></li> -->
+          </ul>
+          <ul class="box">
+            <li class="link_name">Contact</li>
+            <li><a href="tel:+2341234567890">+234 123 456 7890</a></li>
+            <li><a href="mailto:info@tourafrik.com">info@tourafrik.com</a></li>
+            <li><a href="mailto:book@tourafrik.com">book@tourafrik.com</a></li>
+          </ul>
+          <ul class="box input-box">
+            <li class="link_name">For Newsletter</li>
+            <li>
+              <input
+                class="input-field"
+                type="text"
+                placeholder="Enter your email"
+              />
+            </li>
+            <li><input type="button" value="Submit" /></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Resources</li>
+            <li><a href="/html/flightBooking.html">Travel</a></li>
+            <li><a href="/html/destinationPage.html">Destination</a></li>
+            <li><a href="/html/aboutUs.html">Review</a></li>
+            <!-- <li><a href="#">Get started</a></li> -->
+          </ul>
+          <ul class="box">
+            <li class="link_name">Services</li>
+            <li><a href="/html/flightBooking.html">Flight Booking</a></li>
+            <li><a href="#">Flight Details</a></li>
+            <li><a href="/html/destinationPage.html">Hotels</a></li>
+            <!-- <li><a href="#">App design</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text"
+            >Copyright &copy; <span></span> Genesys Upskill Group 5 All
+            rights reserved.</span
+          >
+          <span class="policy_terms">
+            <a href="#">Privacy policy</a>
+            <a href="/html/Terms.html">Terms & condition</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="/Javascript/script.js"></script>
+    <script src="/Javascript/form.js"></script>
   </body>
 </html>

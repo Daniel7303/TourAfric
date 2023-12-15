@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const formData = JSON.parse(flightFormData);
 
     // Use the form data as needed in flightDetails2.js
-    console.log("Flight Form Data:", formData);
+
     const toPlaceElement = document.querySelector(".to-place");
     const fromPlaceElement = document.querySelector(".from-place");
 
@@ -221,7 +221,7 @@ function generateRandomName() {
   ];
 
   const randomName = names[Math.floor(Math.random() * names.length)];
-  console.log("Generated Random Name:", randomName); // Log the generated random name
+
   return randomName;
 }
 function loadPaymentDetails() {

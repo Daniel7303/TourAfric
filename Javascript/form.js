@@ -34,12 +34,9 @@ function togglePasswordVisibility() {
 function redirect() {
   // Check if there is a stored URL in sessionStorage
   const redirectUrl = sessionStorage.getItem("redirectAfterLogin");
-  console.log("this is the redirect url: ", redirectUrl);
 
   // If a redirect URL is found, clear it from sessionStorage and redirect the user
   if (redirectUrl) {
-    console.log(`Redirecting back to: ${redirectUrl}`);
-    
     window.location.href = redirectUrl;
   } else {
     // If no redirect URL is found, redirect to the default page (e.g., "/index.html")

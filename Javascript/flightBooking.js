@@ -38,7 +38,6 @@ function flightBooking() {
   // Check if the user is already on the login page
   if (userEmail && window.location.pathname !== "/html/login.html") {
     // User is logged in and not on the login page, continue with flight booking logic
-    console.log(`User ${userEmail} is logged in. Continue with flight booking logic.`);
   } else {
     // User is not logged in or on the login page, store the current page URL and redirect to login
     storeCurrentPage();
@@ -64,18 +63,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 function storeCurrentPage() {
   const currentPageUrl = window.location.href;
   sessionStorage.setItem("redirectAfterLogin", currentPageUrl);
-  console.log(`Stored current page URL: ${currentPageUrl}`);
 }
 
 // Function to redirect to the login page
 function redirectToLogin() {
   storeCurrentPage(); // Store the current page URL before redirecting
-  console.log("Redirecting to login page...");
- 
 }
 document.addEventListener("DOMContentLoaded", function () {
   // Add event listener to radio buttons
