@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const cvvInput = document.getElementById("cvv");
   const cardholderNameInput = document.getElementById("cardholder-name");
   const cardNumberInput = document.getElementById("card-number");
+  // Get the flight form data from local storage
 
   cardNumberInput.addEventListener("input", function (event) {
     const inputValue = event.target.value;
@@ -74,16 +75,27 @@ function formatCardNumber(input) {
   input.value = formattedValue;
 }
 
-
 document.addEventListener("DOMContentLoaded", function () {
   // Retrieve the stored price value from local storage
   const storedPrice = localStorage.getItem("totalAmount");
-  const totalAmount = document.querySelector(".amount span");
+  const totalAmount = document.querySelector(".amount .price");
+  const totalPerson = document.querySelector(".amount .person");
+  const flightFormDataString = localStorage.getItem("flightFormData");
+
+  // Parse the string into a JavaScript object
+  const flightFormData = JSON.parse(flightFormDataString);
+
+  // Access the 'adults' property
+  const adultsValue = flightFormData.adults;
+
+  // Now 'adultsValue' contains the value of the 'adults' property
+  
 
   // Check if the value is not null (indicating it has been set previously)
   if (storedPrice !== null) {
     // Do something with the retrieved price value
-    totalAmount.innerText = `${storedPrice}.00`;
+    totalAmount.innerText = `${storedPrice * adultsValue}.00`;
+    totalPerson.innerText = adultsValue;
     console.log("Retrieved price value:", storedPrice);
   } else {
     console.log("Price value not found in local storage.");
@@ -103,7 +115,7 @@ function simpleToast() {
   setTimeout(function () {
     x.className = x.className.replace("show", "");
     // Check if there is a stored URL in sessionStorage
-   simpleToast2()
+    simpleToast2();
   }, 3000);
 }
 function simpleToast2() {
@@ -120,6 +132,5 @@ function simpleToast2() {
     x.className = x.className.replace("show", "");
     // Check if there is a stored URL in sessionStorage
     window.location.href = "/html/itineraryConfirmation.html";
-    
   }, 3000);
 }
