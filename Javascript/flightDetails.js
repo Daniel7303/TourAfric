@@ -1,34 +1,48 @@
 function generateRandomValues() {
   const userEmail = localStorage.getItem("loggedInUserEmail");
+  const randomTime1 = generateRandomTime();
+  const randomTime2 = generateRandomTime();
+  const timeDifference = calculateTimeDifference(randomTime1, randomTime2);
+ 
+ 
+  let timeDifferenceText;
+  const fromPlaceElement = document.querySelector(".from-place");
+  const toPlaceElement = document.querySelector(".to-place");
   if (!userEmail) {
     window.location.href = "/html/login.html";
     return; // Stop further execution of the function
   }
   // Generate and set other random values
-  let timeDifferenceText;
-  const fromPlaceElement = document.querySelector(".from-place");
-  const toPlaceElement = document.querySelector(".to-place");
+ 
+  
   document.querySelector(".random-airport-from").innerText =
     generateRandomAirport(fromPlaceElement.innerText);
   document.querySelector(".random-airport-to").innerText =
     generateRandomAirport(toPlaceElement.innerText);
-
-  const randomTime1 = generateRandomTime();
-  const randomTime2 = generateRandomTime();
   document.querySelector(".random-time-1").innerText = randomTime1;
   document.querySelector(".random-time-2").innerText = randomTime2;
-  const timeDifference = calculateTimeDifference(randomTime1, randomTime2);
   document.querySelector(".random-duration").innerText = timeDifference;
   document.querySelector(".random-number").innerText = generateRandomNumber();
   document.querySelector(".random-digit").innerText = generateRandomDigit();
   document.querySelector(".random-alpha").innerText = generateRandomAlpha();
   document.querySelector(".price").innerText = generateRandomPrice();
+  const seatValue = document.querySelector(".random-alpha").innerText;
+  const airportTo = document.querySelector(".random-airport-to").innerText;
+  const airportFrom = document.querySelector(".random-airport-from").innerText;
+  const fromTime = document.querySelector(".random-time-1").innerText;
+  const toTime = document.querySelector(".random-time-2").innerText;
+  
   const priceValue = document.querySelector(".price").innerText;
-
+ 
+  localStorage.setItem("toTime", toTime);
+  localStorage.setItem("fromTime", fromTime);
+  localStorage.setItem("airportTo", airportTo);
+  localStorage.setItem("airportFrom", airportFrom);
+  localStorage.setItem("seatName", seatValue);
   localStorage.setItem("totalAmount", priceValue);
-  console.log("Price value is", priceValue);
-}
 
+ 
+}
 
 // Store the price value in local storage
 function generateRandomAirport(place) {
@@ -36,49 +50,49 @@ function generateRandomAirport(place) {
   const airportMapping = {
     America: [
       "John F. Kennedy International Airport (JFK)",
-      "Los Angeles International Airport (LAX)",
-      "Chicago O'Hare International Airport (ORD)",
+      // "Los Angeles International Airport (LAX)",
+      // "Chicago O'Hare International Airport (ORD)",
     ],
     KENYA: [
       "Jomo Kenyatta International Airport (NBO)",
-      "Moi International Airport (MBA)",
+      // "Moi International Airport (MBA)",
     ],
     Dubai: ["Dubai International Airport (DXB)"],
     "South Africa": [
       "O.R. Tambo International Airport (JNB)",
-      "Cape Town International Airport (CPT)",
+      // "Cape Town International Airport (CPT)",
     ],
     Nigeria: [
       "Murtala Muhammed International Airport (LOS)",
-      "Nnamdi Azikiwe International Airport (ABV)",
+      // "Nnamdi Azikiwe International Airport (ABV)",
     ],
     Egypt: [
       "Cairo International Airport (CAI)",
-      "Sharm El Sheikh International Airport (SSH)",
+      // "Sharm El Sheikh International Airport (SSH)",
     ],
     Singapore: ["Changi Airport (SIN)"],
     // Add more mappings as needed...
     "Mambase, Kenya": [
-      "Moi International Airport (MBA)",
+      // "Moi International Airport (MBA)",
       "Jomo Kenyatta International Airport (NBO)",
     ],
     "Garden City, Singapore": ["Changi Airport (SIN)"],
     "Cape Town, South Africa": [
       "O.R. Tambo International Airport (JNB)",
-      "Cape Town International Airport (CPT)",
+      // "Cape Town International Airport (CPT)",
     ],
     "East Coast, America": [
       "John F. Kennedy International Airport (JFK)",
-      "Los Angeles International Airport (LAX)",
-      "Chicago O'Hare International Airport (ORD)",
+      // "Los Angeles International Airport (LAX)",
+      // "Chicago O'Hare International Airport (ORD)",
     ],
     "China City, China Town": [
       "Beijing Capital International Airport (PEK)",
-      "Shanghai Pudong International Airport (PVG)",
+      // "Shanghai Pudong International Airport (PVG)",
     ],
     "Cario, Egypt": [
       "Cairo International Airport (CAI)",
-      "Sharm El Sheikh International Airport (SSH)",
+      // "Sharm El Sheikh International Airport (SSH)",
     ],
   };
 
@@ -147,12 +161,7 @@ function generateRandomNumber() {
   return `${randomNumber}${randomAlphabet}`;
 }
 
-// You can implement the other generateRandom* functions as needed
-// ...
 
-// Attach the generateRandomValues function to the 'BOOK' button's click event
-
-// Wrap your code in the DOMContentLoaded event listener
 document.addEventListener("DOMContentLoaded", function () {
   // Attach the generateRandomValues function to the 'BOOK' button's click event
   // Check if flight form data is present in local storage
@@ -174,48 +183,47 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
   const loggedInUserData = localStorage.getItem("loggedInUserData");
+  const userData = JSON.parse(loggedInUserData);
+  const passNameElement = document.querySelector(".passName");
+  
+  // Check if userData.name exists, if not, generate a random name
+  const passengerName = generateRandomName();
 
-  if (loggedInUserData) {
-    // Parse the stored JSON data
-    const userData = JSON.parse(loggedInUserData);
-    const passNameElement = document.querySelector(".passName");
+  // Set the innerText of the passName element to the chosen name
+  passNameElement.innerText = passengerName;
 
-    if (passNameElement) {
-      // Check if userData.name exists, if not, generate a random name
-      const passengerName = userData.name
-        ? userData.name
-        : generateRandomName();
-
-      // Set the innerText of the passName element to the chosen name
-      passNameElement.innerText = passengerName;
-
-      // Log the chosen name to the console
-      console.log("Passenger Name:", passengerName);
-    }
-
-    // Function to generate a random name
-
-    // Use the user data as needed in flightDetails2.js
-    console.log("User Data:", userData.name, userData.email);
-  }
+  localStorage.setItem("randomNames", passengerName);
   generateRandomName();
   generateRandomValues();
 });
 function generateRandomName() {
   const names = [
-    "John",
-    "Alice",
-    "Bob",
-    "Eva",
-    "David",
-    "Sophia",
-    "Michael",
-    "Olivia",
+    ["Chijioke Okafor"],
+    ["Ngozi Okonkwo"],
+    ["Oluchi Obi"],
+    ["Emeka Nwachukwu"],
+    ["Adaeze Ude"],
+    ["Adeola Akinwande"],
+    ["Ezinne Ogbonna"],
+    ["Oluwafemi Ogunleye"],
+    ["Nneka Eze"],
+    ["Chinedu Adebayo"],
+    ["Chinwe Okafor"],
+    ["Olamide Adeyemi"],
+    ["Obinna Nwankwo"],
+    ["Amarachi Okafor"],
+    ["Yusuf Ibrahim"],
+    ["Funmilayo Adegoke"],
+    ["Oluwatosin Ojo"],
+    ["Abdul Adewale"],
+    ["Nkem Eze"],
+    ["Aisha Abubakar"],
   ];
+
   const randomName = names[Math.floor(Math.random() * names.length)];
   console.log("Generated Random Name:", randomName); // Log the generated random name
   return randomName;
 }
-function loadPaymentDetails(){
+function loadPaymentDetails() {
   window.location.href = "/html/payment.html";
 }

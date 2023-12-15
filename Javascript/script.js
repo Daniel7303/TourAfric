@@ -246,3 +246,24 @@ function getMonthAbbreviation(monthIndex) {
   ];
   return months[monthIndex];
 }
+// Function to show the flight details link
+function showFlightDetailsLink() {
+  console.log("showFlightDetailsLink triggered");
+
+  // Your logic to determine whether to show or hide the element
+  const shouldShow = true;
+
+  // Store the flag in local storage
+  localStorage.setItem("showFlightDetails", shouldShow);
+}
+
+// Usage on page load
+document.addEventListener("DOMContentLoaded", function () {
+  const flightDetails = document.getElementById("flightDetails");
+  
+  // Retrieve the flag from local storage
+  const shouldShow = localStorage.getItem("showFlightDetails") === "true";
+
+  // Set the display property based on the flag
+  flightDetails.style.display = shouldShow ? "block" : "none";
+});

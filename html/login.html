@@ -4,58 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/form.css" />
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poppins"
     />
-    <link rel="stylesheet" href="/css/toast.css">
+    <link rel="stylesheet" href="/css/toast.css" />
     <title>Document</title>
   </head>
   <body>
     <nav class="navBar">
       <a class="logo" href="/index.html">
+ newlanding
         <img src="/asset/logo/TOUR AFRIK 2 1.png" alt="logo"  />
         <img src="/asset/logo/tourafrik 3.png" alt="logo">
+
+ main
       </a>
       <ul>
-        <!-- <li><a href="">Home</a></li> -->
-        <li >
+        <li>
+          <a href="/index.html">Home</a>
+        </li>
+        <li>
           <a href="/html/destinationPage.html">Destination</a>
         </li>
         <li><a href="/html/aboutUs.html">About us</a></li>
-        <li id="contactLink">
-          <a href="/html/contact.html">Contact us</a>
-        </li>
-        <li id="loginLink">
-          <a href="/html/login.html"></a>
-        </li>
-        <li id="signupLink">
-          <a href="/html/signup.html"></a>
-        </li>
-        <li><img id="imgLink" class="li-Img" src="/asset/images/profile.png" alt="" onclick="toggleDropDown()"/><div class="logout"><h4 onclick="Signout()">SignOut</h4></div></li>
       </ul>
     </nav>
-    
+
     <div class="sign-up-container">
-       
       <div class="top">
-       
         <h1>Login</h1>
-      
-       
       </div>
 
-      <form action="" id="signupForm" onsubmit="event.preventDefault(); simpleToast(); handleLogin();">
-        
+      <form
+        action=""
+        id="signupForm"
+        onsubmit="event.preventDefault(); simpleToast(); handleLogin();"
+      >
         <label for="email">Email</label>
         <input
           type="email"
           id="email"
           name="email"
-          placeholder="Enter your email address" required
+          placeholder="Enter your email address"
+          required
         />
         <div class="password-container">
           <label for="password">Password</label>
@@ -63,10 +61,13 @@
             type="password"
             id="password"
             name="password"
-            placeholder="Enter your password" required
+            placeholder="Enter your password"
+            required
           />
-          <i class="toggle-password fas fa-eye" onclick="togglePasswordVisibility()"></i>
-      
+          <i
+            class="toggle-password fas fa-eye"
+            onclick="togglePasswordVisibility()"
+          ></i>
         </div>
         <!-- <div class="password-container">
           <input type="password" id="passwordInput" placeholder="Enter Password">
@@ -75,29 +76,29 @@
 
         <div class="check-box">
           <input type="checkbox" />
-          <label for="mycheckebox">
-              Remember me
-          </label>
+          <label for="mycheckebox"> Remember me </label>
         </div>
 
-          <button type="submit" >Login</button>
-          <p class="login">Don't have an Account?&nbsp; <a href="/html/signup.html"> Signup</a></p>
+        <button type="submit">Login</button>
+        <p class="login">
+          Don't have an Account?&nbsp; <a href="/html/signup.html"> Signup</a>
+        </p>
       </form>
 
       <div class="center-text">
         <hr />
         <p class="text">OR</p>
         <hr />
-        </div>
+      </div>
 
-        <div class="media-logos">
-          <img src="/asset/icons/Frame 63.svg" alt="Google">
-          <img src="/asset/icons/logos_facebook.svg" alt="Facebook">
-          <img src="/asset/icons/Frame 62.svg" alt="Twitter">
-        </div>
+      <div class="media-logos">
+        <img src="/asset/icons/Frame 63.svg" alt="Google" />
+        <img src="/asset/icons/logos_facebook.svg" alt="Facebook" />
+        <img src="/asset/icons/Frame 62.svg" alt="Twitter" />
+      </div>
     </div>
-    <div id="simpleToast" >
-       <span>Login Successful!...</span>
+    <div id="simpleToast">
+      <span>Login Successful!...</span>
     </div>
     <script src="/Javascript/script.js"></script>
     <script src="/Javascript/form.js"></script>
