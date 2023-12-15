@@ -96,9 +96,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Do something with the retrieved price value
     totalAmount.innerText = `${storedPrice * adultsValue}.00`;
     totalPerson.innerText = adultsValue;
-    console.log("Retrieved price value:", storedPrice);
+
   } else {
-    console.log("Price value not found in local storage.");
+   
   }
 });
 
