@@ -110,7 +110,7 @@ border-radius: 50%;
 .welcome {
   position: absolute;
   width: 50%;
-  top: 15%;
+  top: 30%;
   padding: 4rem;
   font-size: 4rem;
 }
@@ -240,6 +240,9 @@ main {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 3rem;
 }
+.places-section a {
+  color: white;
+}
 
 .places-section img {
   width: 100%;
@@ -288,8 +291,8 @@ main {
   margin: 0;
 }
 
-.places-section button {
-  // margin: -2.7rem 1.2rem 0 2rem;
+ .places-section button {
+  /* // margin: -2.7rem 1.2rem 0 2rem; */
   position: absolute;
   bottom: 1rem;
   right: 1rem;
@@ -299,8 +302,8 @@ main {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  // float: right;
-}
+ /*  // float: right; */
+} 
 
 /* our services section */
 .our-services {
@@ -581,7 +584,7 @@ footer {
   .welcome {
     font-size: 2rem;
     padding: 2rem;
-    top: 20%;
+    top: 30%;
   }
 
   /* content box */
@@ -650,7 +653,7 @@ footer {
   .welcome {
     font-size: 1.5rem;
     padding: 2rem;
-    top: 20%;
+    top: 35%;
   }
 
   /* content box */

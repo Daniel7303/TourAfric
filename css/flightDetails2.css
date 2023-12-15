@@ -15,15 +15,6 @@
   align-items: center;
   text-align: center;
 }
-.plane{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-.plane > img{
-  height: 30px;
-}
 
 .from-to-pass,
 .from-to-details,
