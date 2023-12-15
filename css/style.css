@@ -51,6 +51,7 @@ button{
   top: 0;
   width: 100%;
   z-index: 99;
+  left: 0;
 }
 .navBar ul{
   display: flex;
